@@ -1,3 +1,46 @@
+/*
+    1px  = 0.0833rem
+    2px  = 0.1667rem
+    3px  = 0.25rem
+    4px  = 0.3333rem
+    5px  = 0.4167rem
+    6px  = 0.5rem
+    7px  = 0.5833rem
+    8px  = 0.6667rem
+    9px  = 0.75rem
+    10px = 0.8333rem
+    11px = 0.9167rem
+    12px = 1rem
+    13px = 1.0833rem
+    14px = 1.1667rem
+    15px = 1.25rem
+    16px = 1.3333rem
+    17px = 1.4167rem
+    18px = 1.5rem
+    19px = 1.5833rem
+    20px = 1.6667rem
+    21px = 1.75rem
+    22px = 1.8333rem
+    23px = 1.9167rem
+    24px = 2rem
+    25px = 2.0833rem
+    26px = 2.1667rem
+    27px = 2.25rem
+    28px = 2.3333rem
+    29px = 2.4167rem
+    30px = 2.5rem
+    31px = 2.5833rem
+    32px = 2.6667rem
+    33px = 2.75rem
+    34px = 2.8333rem
+    35px = 2.9167rem
+    36px = 3rem
+    37px = 3.0833rem
+    38px = 3.1667rem
+    39px = 3.25rem
+    40px = 3.3333rem
+*/
+
 :root { font-size: 12px;}
 * { box-sizing: border-box;font-family: 'Noto Sans KR', sans-serif;letter-spacing: -0.025em;}
 
@@ -22,3 +65,20 @@ img { width: 100%;}
 #nav ul li a { display: flex; align-items: center; justify-content: center; width: 100%; height: 3.917rem; font-size: 1.167rem; color: #C1ACFF; background: #32197B;}
 #nav ul li a .star-icon { width: .712rem; height: .681rem; margin-bottom: 1rem;}
 #nav ul li a .adult-icon { width: 1.083rem; height: 1.083rem; margin-right: .167rem; background: url(../img/adult-19.png) no-repeat center; background-size: 100% 100%;}
+
+#sideMenu { position: fixed; top: 0; left: -85.3%; width: 85.3%; height: 100%; padding-top: 4.5rem; background: #FFFFFF; z-index: 10; transition: left .2s ease;}
+.side-cover { position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0); z-index: 9; transition: background .2s ease; pointer-events: none;}
+body.open { overflow: hidden;}
+body.open #sideMenu { left: 0;}
+body.open .side-cover { background-color: rgba(0, 0, 0, 0.4); pointer-events: auto;}
+#sideMenu .close-btn { position: absolute; top: 1.6667rem; left: 1.6667rem; width: 2rem; height: 2rem;}
+#sideMenu .side-logo { width: 10.667rem; margin: 0 auto 1.6667rem;}
+#sideMenu p.my-info-text { font-size: 1.3333rem; font-weight: 500; line-height: 1.9167rem; color: #404040; text-align: center;}
+#sideMenu .btn-wrap { display: flex; justify-content: center; margin-top: 1.25rem; margin-bottom: 1.6667rem;}
+#sideMenu .btn-wrap a { display: flex; align-items: center; justify-content: center; width: 42.5%; height: 3.75rem; font-size: 1.3333rem; font-weight: 500; color: #FFFFFF; border-radius: 1.917rem;}
+#sideMenu .btn-wrap a.login-btn { background: #562BD1; margin-right: .6667rem;}
+#sideMenu .btn-wrap a.join-btn { background: #32197B;}
+#sideMenu .side-menu { padding: 0 1.6667rem;}
+#sideMenu .side-menu li { width: 100%;}
+#sideMenu .side-menu li a { display: flex; align-items: center; height: 4.167rem; font-size: 1.3333rem; color: #333333; border-bottom: 1px solid #E3E3E3;}
+#sideMenu .side-menu li a:after { content: ""; width: 1.5rem; height: 1.5rem; margin-left: auto; background: url("../img/arrow-down-wh-s.png") no-repeat center; background-size: 100% 100%;}
