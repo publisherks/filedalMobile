@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/front.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <title>Filedal</title>
 </head>
 
@@ -156,7 +159,234 @@
         <!-- // sideMenu -->
         <!-- container -->
         <div id="container">
-
+            <article class="main-banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="img/main_banner.png" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="img/main_banner.png" alt=""></a></div>
+                </div>
+            </article>
+            <script>
+                const swiper = new Swiper('.main-banner', {
+                    loop: true,
+                    autoplay: {
+                        delay: 4000,
+                    },
+                });
+            </script>
+            <article class="topsch-box">
+                <div class="real-time">
+                    <p class="tit">실시간 인기</p>
+                    <p class="item" data-num="1">마이네임<span class="up">2</span></p>
+                </div>
+                <div class="ranking-box">
+                    <ul>
+                        <li class="item" data-num="1">마이네임<span class="stay">-</span></li>
+                        <li class="item" data-num="2">지리산<span class="stay">-</span></li>
+                        <li class="item" data-num="3">연모<span class="stay">-</span></li>
+                        <li class="item" data-num="4">런닝맨<span class="stay">-</span></li>
+                        <li class="item" data-num="5">크라임<span class="stay">-</span></li>
+                    </ul>
+                    <ul>
+                        <li class="item" data-num="6">검은태양<span class="down">2</span></li>
+                        <li class="item" data-num="7">놀면뭐하니<span class="stay">-</span></li>
+                        <li class="item" data-num="8">크라임<span class="up">2</span></li>
+                        <li class="item" data-num="9">돌싱포맨<span class="down">2</span></li>
+                        <li class="item" data-num="10">베놈2<span class="stay">-</span></li>
+                    </ul>
+                    <a href="#n" class="ranking-close">
+                        닫기
+                        <i>
+                            <img src="img/arrow-up-wh-s.png" alt="">
+                        </i>
+                    </a>
+                </div>
+            </article>
+            <div class="contents main">
+                <article class="title-area mb-10">
+                    <h2>실시간 인기 리스트</h2>
+                    <div class="type-check">
+                        <input type="radio" name="listType" id="listType" value="listType" checked>
+                        <label for="listType" class="list"></label>
+                        <input type="radio" name="listType" id="galleryType" value="galleryType">
+                        <label for="galleryType" class="gallery ml-5"></label>
+                    </div>
+                </article>
+                <article class="lists-box">
+                    <ul class="lists">
+                        <li>
+                            <a href="html/view.html" class="img view-link">
+                                <div class="adult-box"></div>
+                                <img src="img/sample-img.png" alt="">
+                            </a>
+                            <div class="info">
+                                <a href="html/view.html" class="title view-link">
+                                    <p>
+                                        <i class="icon-adult"></i>[한드완결] 로스쿨.E01 ~ 16회. 완결 . [초.고화질] .720p-NEXT [한드완결] 로스쿨.E01 ~ 16회. 완결 . [초.고화질] .720p-NEXT
+                                    </p>
+                                </a>
+                                <div class="etc">
+                                    <p class="cate">영화</p>
+                                    <p class="point">45P</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="html/view.html" class="img view-link">
+                                <div class="adult-box"></div>
+                                <img src="img/sample-img.png" alt="">
+                            </a>
+                            <div class="info">
+                                <a href="html/view.html" class="title view-link">
+                                    <p>
+                                        <i class="icon-adult"></i>[한드완결] 로스쿨.E01 ~ 16회. 완결 . [초.고화질] .720p-NEXT
+                                    </p>
+                                </a>
+                                <div class="etc">
+                                    <p class="cate">영화</p>
+                                    <p class="point">45P</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="html/view.html" class="img view-link">
+                                <div class="adult-box"></div>
+                                <img src="img/sample-img.png" alt="">
+                            </a>
+                            <div class="info">
+                                <a href="html/view.html" class="title view-link">
+                                    <p>
+                                        <i class="icon-adult"></i>[번역] 전 최강 검사는 이세계 마법을 동경한다 1~33
+                                    </p>
+                                </a>
+                                <div class="etc">
+                                    <p class="cate">영화</p>
+                                    <p class="point">45P</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="adult">
+                            <a href="html/view.html" class="img view-link">
+                                <div class="adult-box"></div>
+                                <img src="img/sample-img.png" alt="">
+                            </a>
+                            <div class="info">
+                                <a href="html/view.html" class="title view-link">
+                                    <p>
+                                        <i class="icon-adult"></i>[ 닥 터 슬 립 ] 초 현 실 능 력 자 들 스릴러 자체자막
+                                    </p>
+                                </a>
+                                <div class="etc">
+                                    <p class="cate">영화</p>
+                                    <p class="point">45P</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="html/view.html" class="img view-link">
+                                <div class="adult-box"></div>
+                                <img src="img/sample-img.png" alt="">
+                            </a>
+                            <div class="info">
+                                <a href="html/view.html" class="title view-link">
+                                    <p>
+                                        <i class="icon-adult"></i>지원미궁 블랙 컴퍼니 3화 (BS11 1280x720 x264 AAC)
+                                    </p>
+                                </a>
+                                <div class="etc">
+                                    <p class="cate">영화</p>
+                                    <p class="point">45P</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="html/view.html" class="img view-link">
+                                <div class="adult-box"></div>
+                                <img src="img/sample-img.png" alt="">
+                            </a>
+                            <div class="info">
+                                <a href="html/view.html" class="title view-link">
+                                    <p>
+                                        <i class="icon-adult"></i> [7월] 어벤져스의 운명을 바꾼 블랙위도우. 1080p 완벽자막
+                                    </p>
+                                </a>
+                                <div class="etc">
+                                    <p class="cate">영화</p>
+                                    <p class="point">45P</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="adult">
+                            <a href="html/view.html" class="img view-link">
+                                <div class="adult-box"></div>
+                                <img src="img/sample-img.png" alt="">
+                            </a>
+                            <div class="info">
+                                <a href="html/view.html" class="title view-link">
+                                    <p>
+                                        <i class="icon-adult"></i>순간의 선택 골든타임.E25.210723.720p-NEXT
+                                    </p>
+                                </a>
+                                <div class="etc">
+                                    <p class="cate">영화</p>
+                                    <p class="point">45P</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="html/view.html" class="img view-link">
+                                <div class="adult-box"></div>
+                                <img src="img/sample-img.png" alt="">
+                            </a>
+                            <div class="info">
+                                <a href="html/view.html" class="title view-link">
+                                    <p>
+                                        <i class="icon-adult"></i> [괴기맨숀] 성.준X김.보.라.FHD.1080p
+                                    </p>
+                                </a>
+                                <div class="etc">
+                                    <p class="cate">영화</p>
+                                    <p class="point">45P</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="html/view.html" class="img view-link">
+                                <div class="adult-box"></div>
+                                <img src="img/sample-img.png" alt="">
+                            </a>
+                            <div class="info">
+                                <a href="html/view.html" class="title view-link">
+                                    <p>
+                                        <i class="icon-adult"></i>[한드완결] 로스쿨.E01 ~ 16회. 완결 . [초.고화질] .720p-NEXT
+                                    </p>
+                                </a>
+                                <div class="etc">
+                                    <p class="cate">영화</p>
+                                    <p class="point">45P</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="html/view.html" class="img view-link">
+                                <div class="adult-box"></div>
+                                <img src="img/sample-img.png" alt="">
+                            </a>
+                            <div class="info">
+                                <a href="html/view.html" class="title view-link">
+                                    <p>
+                                        <i class="icon-adult"></i>[한드완결] 로스쿨.E01 ~ 16회. 완결 . [초.고화질] .720p-NEXT
+                                    </p>
+                                </a>
+                                <div class="etc">
+                                    <p class="cate">영화</p>
+                                    <p class="point">45P</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#n" class="more-btn">더보기<i></i></a>
+                </article>
+            </div>
         </div>
         <!-- // container -->
         <!-- footer -->
