@@ -12,9 +12,9 @@
 #container.user .tab-menu li { width: 50%;}
 
 .login-box { display: flex; flex-direction: column; align-items: center; padding: 2.5rem 1.6667rem;}
-#container.user .input-box { position: relative; width: 100%; height: 4.167rem;}
-#container.user .input-box input { width: 100%; height: 100%; padding: 0 1.6667rem; border: 1px solid #D0D0D0; border-radius: 2.0833rem; outline: none;}
-#container.user .btn-primary { width: 100%; height: 4.167rem; font-size: 1.1667rem; font-weight: 400; line-height: 1.6667rem; border: none; border-radius: 2.0833rem; outline: none;}
+.login-box .input-box { position: relative; width: 100%; height: 4.167rem;}
+.login-box .input-box input { width: 100%; height: 100%; padding: 0 1.6667rem; border: 1px solid #D0D0D0; border-radius: 2.0833rem; outline: none;}
+.login-box .btn-primary { width: 100%; height: 4.167rem; font-size: 1.1667rem; font-weight: 400; line-height: 1.6667rem; border: none; border-radius: 2.0833rem; outline: none;}
 .login-box .util { display: flex; align-items: center; width: 100%; margin-top: 1.25rem;}
 .login-box .util .find-link { font-size: 1.1667rem; line-height: 1.6667rem; color: #404040; margin-left: auto;}
 .login-box .dividing { display: block; width: 100%; height: 1px; background: #E3E3E3; margin: 3.3333rem 0 2.9167rem; border: none;}
@@ -33,6 +33,36 @@
 .join-box .checkbox label { font-weight: 500; color: #333333;}
 .join-box .agree-boxs { display: flex; align-items: center; justify-content: space-between; width: 100%;}
 .join-box .agree-boxs a { display: flex; align-items: center; justify-content: center; width: calc(50% - 2.5px); height: 3.667rem; font-size: 1.1667rem; line-height: 1.6667rem; color: #666666; border: 1px solid #E3E3E3; border-radius: 0.3333rem;}
+
+.find-box { display: flex; flex-direction: column; align-items: center; padding: 2.5rem 0;}
+.find-box [data-tabCon] { display: none;}
+.find-box [data-tabCon].on { display: block;}
+.find-box .sub-tab { display: flex; flex-direction: column; width: 100%; margin-bottom: 2.5rem; padding: 0 1.6667rem;}
+.find-box .sub-tab li a { display: flex; align-items: center; justify-content: center; width: 100%; height: 3.75rem; font-size: 1.1667rem; font-weight: 500; line-height: 1.6667rem; color: #888888; background: #F5F5F5; border: 1px solid #E3E3E3; border-radius: 0.3333rem;}
+.find-box .sub-tab li a.on { color: #6435E9; background: #FFFFFF; border-color: #6435E9;}
+.find-box .sub-tab li:not(:first-child) { margin-top: 0.6667rem;}
+.find-box .sub-tab-con { width: 100%;}
+.find-box .radio-boxs { display: flex; align-items: center; padding: 0 1.6667rem;}
+.find-box .radio { display: inline-flex;}
+.find-box .radio input { display: none;}
+.find-box .radio label { display: flex; align-items: center; font-size: 1.1667rem; line-height: 1.6667rem; color: #333333; cursor: pointer;}
+.find-box .radio label i { display: flex; align-items: center; justify-content: center; width: 1.6667rem; height: 1.6667rem; border: 1px solid #D0D0D0; border-radius: 50%; margin-right: 0.6667rem;}
+.find-box .radio input:checked + label i { border-color: #562BD1;}
+.find-box .radio input:checked + label i::after { content: ""; width: 1.1667rem; height: 1.1667rem; background: #562BD1; border-radius: 50%;}
+.find-box .form-box { margin: 2.0833rem 0 1.25rem; padding: 1.6667rem 1.6667rem 1.4167rem; background: #F5F5F5; }
+.find-box .form-box p { font-size: 1.1667rem; color: #202020; line-height: 1.6667rem; margin-bottom: 0.6667rem;}
+.find-box .form-box .input-box { width: 100%; height: 3.75rem; }
+.find-box .form-box .input-box input { width: 100%; height: 100%; padding: 0 1.25rem;}
+.find-box .form-box select { width: 21.12%; height: 3.75rem; font-size: 1.1667rem; line-height: 1.6667rem; color: #404040; padding: 0 1.25rem; border: 1px solid #E3E3E3; background: url(../img/arrow-down-bl-s.png) no-repeat calc(100% - 12px) center #FFFFFF; background-size: 1.5rem 1.5rem; border-radius: 0.3333rem; outline: none; appearance:none;}
+.find-box .form-box select#year { width: 28.36%;}
+.find-box .info-box { padding: 0 1.6667rem;}
+.find-box .info-box p.info { font-size: 1.0833rem; line-height: 1.5833rem; color: #888888; margin-top: 15px;}
+.find-box .info-box p.info strong { font-weight: 400; color: #404040;}
+.find-box .info-box button[type="submit"] { display: block; width: 100%; height: 4.167rem; font-size: 1.3333rem; font-weight: 700; color: #FFFFFF; background: #202020; border: none; border-radius: 2.0833rem; margin: 2.5rem auto 0; outline: none;}
+.find-box #nameTab { display: none;}
+
+
+
 
 
 

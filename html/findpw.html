@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/front.js"></script>
+    <title>Filedal - 로그인</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- subHeader -->
+        <header id="subHeader">
+            <a href="#" class="back-btn"></a>
+            <h2>아이디/비밀번호 찾기</h2>
+        </header>
+        <!-- // subHeader -->
+        <!-- container -->
+        <div id="container" class="user">
+            <article class="tab-menu">
+                <ul>
+                    <li><a href="./findid.html" class="on">아이디 찾기</a></li>
+                    <li><a href="./findpw.html">비밀번호 찾기</a></li>
+                </ul>
+            </article>
+            <section>
+                <form action="">
+                    <div class="find-box">
+                        <ul class="sub-tab" data-tabMenu>
+                            <li><a href="#" class="on" data-tab="1">회원정보로 찾기</a></li>
+                            <li><a href="#" data-tab="2">아이핀으로 찾기</a></li>
+                            <li><a href="#" data-tab="3">본인확인으로 찾기</a></li>
+                        </ul>
+                        <div class="sub-tab-con" data-tabCon="1">
+                            <div class="form-box">
+                                <p>아이디</p>
+                                <div class="input-box mb-15">
+                                    <input type="text" placeholder="아이디를 입력해주세요.">
+                                </div>
+                                <p>이메일</p>
+                                <div class="input-box">
+                                    <input type="email" placeholder="이메일 주소를 입력해주세요.">
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <p class="info">
+                                    회원정보에 등록하신 <strong>이메일</strong>을 정확히 입력해주세요.<br>
+                                    이메일 주소가 기억나지 않는 경우 <strong>고객센터로 문의</strong> 주시기 바랍니다.
+                                </p>
+                                <button type="submit">비밀번호 찾기</button>
+                            </div>
+                        </div>
+                        <div class="sub-tab-con" data-tabCon="2">
+                            <div class="form-box">
+                                <p>아이디</p>
+                                <div class="input-box mb-15">
+                                    <input type="text" placeholder="아이디를 입력해주세요.">
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <p class="info">
+                                    <strong>실명인증 또는 성인인증</strong>을 완료한 회원일 경우 실명으로 아이디 찾기가 가능합니다.
+                                </p>
+                                <button type="submit">비밀번호 찾기</button>
+                            </div>
+                        </div>
+                        <div class="sub-tab-con" data-tabCon="3"></div>
+                        <!-- <div class="find-complete">
+                                <p class="comple-tit">비밀번호 찾기 검색 결과입니다.</p>
+                                <div class="comple-box">
+                                    <p>
+                                        회원가입 정보에 등록된 메일로<br>
+                                        <b>임시 비밀번호</b>를 발송하였습니다.<br>
+                                        <span>이메일 : filedal@naver.com</span>
+                                    </p>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="#n" class="cancel">
+                                        뒤로
+                                    </a>
+                                    <a href="#n" class="confirm" rel="modal:close">
+                                        확인
+                                    </a>
+                                </div>
+                            </div> -->
+                    </div>
+                </form>
+            </section>
+        </div>
+        <!-- // container -->
+    </div>
+    <script>
+        $(document).ready(function () {
+            const radio = $("input[name='find']");
+
+            radio.change(function () {
+                let val = this.value;
+                $(".find-tab").hide();
+                $("#" + val + "Tab").show();
+            })
+
+        });
+    </script>
+</body>
+
+</html>
