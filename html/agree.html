@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/front.js"></script>
+    <title>Filedal- 서비스 이용약관</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- subHeader -->
+        <header id="subHeader" class="white">
+            <a href="#" class="back-btn"></a>
+            <h2>서비스 이용약관</h2>
+        </header>
+        <!-- // subHeader -->
+        <!-- container -->
+        <div id="container" class="agree">
+            <p>
+                제 1 장 총 칙<br>
+                <br>
+                제 1 조 (목적)<br>
+                이 약관은 주식회사 마이플(이하 “회사”라 합니다.)가 제공하는 파일썬(이하 “서비스”라 합니다)의 이용조건 및 절차, 기타 제반사항에 대한 규정을 목적으로 합니다.<br>
+                제 2 조 (약관의 효력 및 변경)<br>
+                ①본 약관의 내용은 서비스 화면에 게시하여 10일간 공지하거나, 전자우편 등 기타의 방법으로 회원에게 고지 후 10일이 경과함으로써 효력이 발생합니다.<br>
+                ②회사는 합리적인 사유가 발생 할 경우에는 사전 고지 없이 약관의 내용을 일부 변경할 수 있으며, 변경된 약관은 제1항과 같은 방법으로 공지함으로써 효력을 발생합니다.<br>
+                ③이용고객은 변경된 약관사항에 동의하지 않으면 서비스 이용을 중단하고 회원탈퇴를 요청할 수 있으며, 약관의 효력발생일 이후에 계속적인 서비스를 사용할 경우 회사는 약관의 변경사항에 동의한 것으로 간주합니다.<br>
+                제 3 조 (약관 이외의 준칙)<br>
+                이 약관에 명시되지 않은 사항은 대한민국의 법률인 전기통신기본법, 전기통신사업법, 기타 상관행등 관련법령의 해당 규정에 따릅니다.<br>
+                제 4 조 (용어의 정의)<br>
+                이 약관에서 사용하는 용어의 정의는 다음과 같으며, 그외의 용어는 개별 유료서비스 약관에 따릅니다.<br>
+                ①파일썬 : 주식회사 마이플에서 운영하는 웹 스토리지 인터넷 서비스<br>
+                ②회원 : 회사와 서비스 이용에 관한 계약을 체결하고 아이디를 부여 받은<br>
+                제 1 조 (목적)<br>
+                이 약관은 주식회사 마이플(이하 “회사”라 합니다.)가 제공하는 파일썬(이하 “서비스”라 합니다)의 이용조건 및 절차, 기타 제반사항에 대한 규정을 목적으로 합니다.<br>
+                제 2 조 (약관의 효력 및 변경)<br>
+                ①본 약관의 내용은 서비스 화면에 게시하여 10일간 공지하거나, 전자우편 등 기타의 방법으로 회원에게 고지 후 10일이 경과함으로써 효력이 발생합니다.<br>
+                ②회사는 합리적인 사유가 발생 할 경우에는 사전 고지 없이 약관의 내용을 일부 변경할 수 있으며, 변경된 약관은 제1항과 같은 방법으로 공지함으로써 효력을 발생합니다.<br>
+                ③이용고객은 변경된 약관사항에 동의하지 않으면 서비스 이용을 중단하고 회원탈퇴를 요청할 수 있으며, 약관의 효력발생일 이후에 계속적인 서비스를 사용할 경우 회사는 약관의 변경사항에 동의한 것으로 간주합니다.<br>
+                제 3 조 (약관 이외의 준칙)<br>
+                이 약관에 명시되지 않은 사항은 대한민국의 법률인 전기통신기본법, 전기통신사업법, 기타 상관행등 관련법령의 해당 규정에 따릅니다.<br>
+                제 4 조 (용어의 정의)<br>
+                이 약관에서 사용하는 용어의 정의는 다음과 같으며, 그외의 용어는 개별 유료서비스 약관에 따릅니다.<br>
+                ①파일썬 : 주식회사 마이플에서 운영하는 웹 스토리지 인터넷 서비스<br>
+                ②회원 : 회사와 서비스 이용에 관한 계약을 체결하고 아이디를 부여 받은<br>
+            </p>
+        </div>
+        <!-- // container -->
+    </div>
+    <script>
+        $(document).ready(function() {
+            var Offset = $("#subHeader").offset().top + $("#subHeader").outerHeight();
+            $(window).scroll(function() {
+                if($(document).scrollTop() > Offset) {
+                    $("#subHeader").addClass("scroll");
+                }else {
+                    $("#subHeader").removeClass("scroll");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

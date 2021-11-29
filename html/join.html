@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/front.js"></script>
+    <title>Filedal - 회원가입</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- subHeader -->
+        <header id="subHeader">
+            <a href="#" class="back-btn"></a>
+            <h2>로그인/회원가입</h2>
+        </header>
+        <!-- // subHeader -->
+        <!-- container -->
+        <div id="container" class="user">
+            <article class="tab-menu">
+                <ul>
+                    <li><a href="./login.html">로그인</a></li>
+                    <li><a href="./join.html" class="on">회원가입</a></li>
+                </ul>
+            </article>
+            <section>
+                <form action="">
+                    <div class="join-box">
+                        <div class="input-box mb-8">
+                            <input type="text" placeholder="아이디를 입력해주세요. (영문,숫자 조합 4~20자)">
+                        </div>
+                        <div class="input-box mb-8">
+                            <input type="password" class="input" placeholder="패스워드를 입력해주세요. (영문,숫자 조합 4~20자)">
+                        </div>
+                        <div class="input-box mb-8">
+                            <input type="password" class="input" placeholder="패스워드 확인">
+                        </div>
+                        <div class="input-box mb-8">
+                            <input type="text" class="input" placeholder="닉네임을 입력해주세요">
+                        </div>
+                        <button type="submit" class="btn-primary">회원 가입 완료</button>
+                        <div class="sns-box">
+                            <p>
+                                <strong>SNS 회원 가입</strong>
+                                아래의 SNS계정으로도 서비스 이용이 가능합니다.
+                            </p>
+                            <div class="sns-link">
+                                <a href="#"><img src="../img/ico-naver.png" alt="네이버"></a>
+                                <a href="#" class="ml-20 mr-20"><img src="../img/ico-kakao.png" alt="카카오"></a>
+                                <a href="#"><img src="../img/ico-apple.png" alt="애플"></a>
+                            </div>
+                        </div>
+                        <div class="checkbox mb-15">
+                            <input type="checkbox" name="" id="agreeAll">
+                            <label for="agreeAll">아래 이용약관 / 개인정보 수집 및 이용에 동의합니다.</label>
+                        </div>
+                        <div class="agree-boxs">
+                            <a href="./agree.html">서비스 이용약관</a>
+                            <a href="#">개인정보 수집 및 이용</a>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <!-- // container -->
+    </div>
+</body>
+</html>

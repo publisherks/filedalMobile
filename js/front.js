@@ -3,6 +3,7 @@ $(document).ready(function () {
     onTop();
     ranking();
     listTypeChange();
+    pageBack();
 });
 
 function sideMenu() {
@@ -50,5 +51,11 @@ function listTypeChange () {
         }
 
         LISTS[method]("gallery-type");
+    })
+}
+
+function pageBack () {
+    $(".back-btn").off("click").on("click", function () {
+        window.history.back();
     })
 }

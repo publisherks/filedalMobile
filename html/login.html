@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/front.js"></script>
+    <title>Filedal - 로그인</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- subHeader -->
+        <header id="subHeader">
+            <a href="#" class="back-btn"></a>
+            <h2>로그인/회원가입</h2>
+        </header>
+        <!-- // subHeader -->
+        <!-- container -->
+        <div id="container" class="user">
+            <article class="tab-menu">
+                <ul>
+                    <li><a href="./login.html" class="on">로그인</a></li>
+                    <li><a href="./join.html">회원가입</a></li>
+                </ul>
+            </article>
+            <section>
+                <form action="">
+                    <div class="login-box">
+                        <div class="input-box mb-8">
+                            <input type="text" placeholder="아이디를 입력해주세요.">
+                        </div>
+                        <div class="input-box mb-8">
+                            <input type="password" class="input" placeholder="패스워드를 입력해주세요.">
+                        </div>
+                        <button type="submit" class="btn-primary">로그인</button>
+                        <div class="util">
+                            <div class="checkbox">
+                                <input type="checkbox" name="" id="loginSave">
+                                <label for="loginSave">로그인 유지</label>
+                            </div>
+                            <a href="#n" class="find-link">아이디/비밀번호 찾기</a>
+                        </div>
+                        <hr class="dividing"/>
+                        <p class="sns-info-text">애플, 카카오톡, 네이버 계정으로도<br>서비스 이용이 가능합니다.</p>
+                        <div class="sns-link">
+                            <a href="#"><img src="../img/ico-naver.png" alt="네이버"></a>
+                            <a href="#" class="ml-20 mr-20"><img src="../img/ico-kakao.png" alt="카카오"></a>
+                            <a href="#"><img src="../img/ico-apple.png" alt="애플"></a>
+                        </div>
+                        <a href="#" class="join-link">파일달 무료 회원 가입</a>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <!-- // container -->
+    </div>
+</body>
+</html>
