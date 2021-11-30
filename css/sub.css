@@ -11,6 +11,7 @@
 
 #container.user .tab-menu li { width: 50%;}
 
+/* 로그인 */
 .login-box { display: flex; flex-direction: column; align-items: center; padding: 2.5rem 1.6667rem;}
 .login-box .input-box { position: relative; width: 100%; height: 4.167rem;}
 .login-box .input-box input { width: 100%; height: 100%; padding: 0 1.6667rem; border: 1px solid #D0D0D0; border-radius: 2.0833rem; outline: none;}
@@ -24,6 +25,7 @@
 .login-box .join-link { position: relative; font-size: 1.1667rem; font-weight: 700; line-height: 1.6667rem; color: #6435E9;}
 .login-box .join-link::after { content: ""; position: absolute; top: calc(100% + 0.3333rem); left: 0; display: block; width: 100%; height: 1px; background: #7348F0;}
 
+/* 회원가입 */
 .join-box { display: flex; flex-direction: column; align-items: center; padding: 2.5rem 1.6667rem;}
 .join-box .input-box { position: relative; width: 100%; height: 4.167rem;}
 .join-box .input-box input { width: 100%; height: 100%; padding: 0 1.6667rem; border: 1px solid #D0D0D0; border-radius: 2.0833rem; outline: none;}
@@ -37,6 +39,7 @@
 .join-box .agree-boxs { display: flex; align-items: center; justify-content: space-between; width: 100%;}
 .join-box .agree-boxs a { display: flex; align-items: center; justify-content: center; width: calc(50% - 2.5px); height: 3.667rem; font-size: 1.1667rem; line-height: 1.6667rem; color: #666666; border: 1px solid #E3E3E3; border-radius: 0.3333rem;}
 
+/* 아이디/비밀번호 찾기 */
 .find-box { display: flex; flex-direction: column; align-items: center; padding: 2.5rem 0;}
 .find-box [data-tabCon] { display: none;}
 .find-box [data-tabCon].on { display: block;}
@@ -73,6 +76,33 @@
 .find-box .find-complete .comple-box p span { display: inline-block; font-weight: 600; margin-top: 1.25rem; color: #562BD1;}
 .find-box .find-complete a { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.167rem; font-size: 1.3333rem; font-weight: 700; color: #FFFFFF; background: #202020; border: none; border-radius: 2.0833rem; margin: 2.5rem auto 0; outline: none;}
 
+/* 상세 */
+#viewHeader .subject { padding: 1.4167rem 1.6667rem; background: #562BD1;}
+#viewHeader .subject h2 { font-size: 1.3333rem; font-weight: 500; line-height: 1.9167rem; color: #FFFFFF;}
+#viewHeader .view-btn { display: none; align-items: center; justify-content: center; width: 100%; padding: 0.9167rem 0; font-size: 1.3333rem; font-weight: 700; line-height: 1.9167rem; color: #FFFFFF; background: #00C2B6;}
+#viewHeader .view-btn i { width: 1rem; height: 1rem; margin-left: 0.4167rem; background: url(../img/ico-view-arrow.png) no-repeat center; background-size: 100%;}
+#wrap.scroll #subHeader { display: none;}
+#wrap.scroll #viewHeader { position: fixed; top: 0; width: 100%;}
+#wrap.scroll #viewHeader .subject h2 { white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+#container.view .view-table { margin-bottom: 1.6667rem; padding: 0.8333rem 1.6667rem; border-bottom: 1px solid #E3E3E3;}
+#container.view .view-table table { width: 100%;}
+#container.view .view-table table th,
+#container.view .view-table table td { height: 2.4167rem; font-size: 1.0833rem; line-height: 1.5833rem; color: #666666; text-align: left; vertical-align: middle;}
+#container.view .view-table table td span { color: #A8A8A8; text-decoration: line-through;}
+#container.view .view-table table td strong { font-weight: 500; color: #562BD1;}
+#container.view .view-table table td .down-score { position: relative; display: inline-block; width: 4.833rem; height: 0.8333rem; margin-left: 0.4167rem; background: url(../img/star-score.png) no-repeat left bottom; background-size: 4.833rem 1.6667rem;}
+#container.view .view-table table td .down-score div { position: absolute; top: 0; left: 0; height: 0.8333rem; background: url(../img/star-score.png) no-repeat left top; background-size: 4.833rem 1.6667rem;}
+#container.view .btn-wrap { display: flex; align-items: center; justify-content: center; margin-bottom: 1.6667rem;}
+#container.view .btn-wrap a { display: flex; align-items: center; justify-content: center; height: 3.75rem; font-size: 1.3333rem; font-weight: 700; color: #FFFFFF; border-radius: 1.9167rem;}
+#container.view .btn-wrap .view-btn { width: 40.8%; background: #00C2B6;}
+#container.view .btn-wrap .view-btn i { width: 1rem; height: 1rem; margin-left: 0.4167rem; background: url(../img/ico-view-arrow.png) no-repeat center; background-size: 100%;}
+#container.view .btn-wrap .coupon-btn { width: 31.46%; background: #A8A8A8; margin-left: 0.8333rem;}
+#container.view .file-box { padding: 1.6667rem; background: #F5F5F5;}
+#container.view .file-box p.title { font-size: 1.0833rem; font-weight: 500; line-height: 1.5833rem; color: #404040; margin-bottom: 0.4167rem;}
+#container.view .file-box ul { height: 6.25rem; margin-bottom: 1.5rem; overflow: hidden;}
+#container.view .file-box.open ul { height: auto;}
+#container.view .file-box ul li { font-size: 1.0833rem; line-height: 2.0833rem;}
+#container.view .file-box .arrow-btn { display: block; margin: 0 auto; width: 1.5rem; height: 0.75rem; background: url(../img/-bt_more.png) no-repeat center; background-size: 100%;}
 
 
 
