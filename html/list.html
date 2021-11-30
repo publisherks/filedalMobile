@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/sub.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/front.js"></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../js/front.js"></script>
     <title>Filedal</title>
 </head>
 
@@ -23,15 +22,15 @@
         <header id="header">
             <div class="flex-c">
                 <div class="menu-trigger">
-                    <img src="img/ic_menu.png" alt="">
+                    <img src="../img/ic_menu.png" alt="">
                 </div>
                 <h1 id="logo">
                     <a href="#">
-                        <img src="img/logo.png" alt="FILEDAL">
+                        <img src="../img/logo.png" alt="FILEDAL">
                     </a>
                 </h1>
                 <a href="#" class="user-btn">
-                    <img src="img/ic_login.png" alt="">
+                    <img src="../img/ic_login.png" alt="">
                 </a>
             </div>
             <div class="sch-box">
@@ -46,46 +45,46 @@
         <nav id="nav">
             <ul>
                 <li>
-                    <a href="html/list.html">
+                    <a href="#">
                         인기
-                        <img src="img/menu-star.png" alt="" class="star-icon">
+                        <img src="../img/menu-star.png" alt="" class="star-icon">
                     </a>
                 </li>
                 <li>
-                    <a href="html/list.html">영화</a>
+                    <a href="#" class="on">영화</a>
                 </li>
                 <li>
-                    <a href="html/list.html">드라마</a>
+                    <a href="#">드라마</a>
                 </li>
                 <li>
-                    <a href="html/list.html">동영상</a>
+                    <a href="#">동영상</a>
                 </li>
                 <li>
-                    <a href="html/list.html">게임</a>
+                    <a href="#">게임</a>
                 </li>
                 <li>
-                    <a href="html/list.html">애니</a>
+                    <a href="#">애니</a>
                 </li>
                 <li>
-                    <a href="html/list.html">만화</a>
+                    <a href="#">만화</a>
                 </li>
                 <li>
-                    <a href="html/list.html">도서</a>
+                    <a href="#">도서</a>
                 </li>
                 <li>
-                    <a href="html/list.html">교육</a>
+                    <a href="#">교육</a>
                 </li>
                 <li>
-                    <a href="html/list.html">유틸</a>
+                    <a href="#">유틸</a>
                 </li>
                 <li>
-                    <a href="html/list.html">
+                    <a href="#">
                         <i class="adult-icon"></i>
                         웹툰
                     </a>
                 </li>
                 <li>
-                    <a href="html/list.html">
+                    <a href="#">
                         <i class="adult-icon"></i>
                         성인
                     </a>
@@ -93,13 +92,27 @@
             </ul>
         </nav>
         <!-- // nav -->
+        <div id="subNav">
+            <ul>
+                <li><a href="#" class="on">전체</a></li>
+                <li><a href="#">인기영화</a></li>
+                <li><a href="#">한국영화</a></li>
+                <li><a href="#">액션/전쟁</a></li>
+                <li><a href="#">SF/판타지</a></li>
+                <li><a href="#">공포/스릴러</a></li>
+                <li><a href="#">코미디/드라마</a></li>
+                <li><a href="#">멜로/가족</a></li>
+                <li><a href="#">HD고화질</a></li>
+                <li><a href="#"><i class="adult-icon"></i>성인</a></li>
+            </ul>
+        </div>
         <!-- sideMenu -->
         <aside id="sideMenu">
             <div class="close-btn">
-                <img src="img/icn_close.png" alt="">
+                <img src="../img/icn_close.png" alt="">
             </div>
             <div class="side-logo">
-                <img src="img/side_logo.png" alt="">
+                <img src="../img/side_logo.png" alt="">
             </div>
             <p class="my-info-text">내정보를 보시려면 로그인을 해주세요.</p>
             <div class="btn-wrap">
@@ -158,51 +171,20 @@
         <!-- // sideMenu -->
         <!-- container -->
         <div id="container">
-            <article class="main-banner">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><a href="#"><img src="img/main_banner.png" alt=""></a></div>
-                    <div class="swiper-slide"><a href="#"><img src="img/main_banner.png" alt=""></a></div>
-                </div>
-            </article>
-            <script>
-                const swiper = new Swiper('.main-banner', {
-                    loop: true,
-                    autoplay: {
-                        delay: 4000,
-                    },
-                });
-            </script>
-            <article class="topsch-box">
-                <div class="real-time">
-                    <p class="tit">실시간 인기</p>
-                    <p class="item" data-num="1">마이네임<span class="up">2</span></p>
-                </div>
-                <div class="ranking-box">
-                    <ul>
-                        <li class="item" data-num="1">마이네임<span class="stay">-</span></li>
-                        <li class="item" data-num="2">지리산<span class="stay">-</span></li>
-                        <li class="item" data-num="3">연모<span class="stay">-</span></li>
-                        <li class="item" data-num="4">런닝맨<span class="stay">-</span></li>
-                        <li class="item" data-num="5">크라임<span class="stay">-</span></li>
-                    </ul>
-                    <ul>
-                        <li class="item" data-num="6">검은태양<span class="down">2</span></li>
-                        <li class="item" data-num="7">놀면뭐하니<span class="stay">-</span></li>
-                        <li class="item" data-num="8">크라임<span class="up">2</span></li>
-                        <li class="item" data-num="9">돌싱포맨<span class="down">2</span></li>
-                        <li class="item" data-num="10">베놈2<span class="stay">-</span></li>
-                    </ul>
-                    <a href="#n" class="ranking-close">
-                        닫기
-                        <i>
-                            <img src="img/arrow-up-wh-s.png" alt="">
-                        </i>
-                    </a>
-                </div>
-            </article>
-            <div class="contents main">
+            <div class="contents">
                 <article class="title-area mb-10">
-                    <h2>실시간 인기 리스트</h2>
+                    <div class="filter-check mr-5">
+                        <input type="checkbox" name="adult" id="adult">
+                        <label for="adult">
+                            <i class="icon"></i>성인제외
+                        </label>
+                    </div>
+                    <div class="filter-check">
+                        <input type="checkbox" name="pass" id="pass">
+                        <label for="pass">
+                            <i class="icon"></i>정액권 보기
+                        </label>
+                    </div>
                     <div class="type-check">
                         <input type="radio" name="listType" id="listType" value="listType" checked>
                         <label for="listType" class="list"></label>
@@ -215,7 +197,7 @@
                         <li>
                             <a href="html/view.html" class="img view-link">
                                 <div class="adult-box"></div>
-                                <img src="img/sample-img.png" alt="">
+                                <img src="../img/sample-img.png" alt="">
                             </a>
                             <div class="info">
                                 <a href="html/view.html" class="title view-link">
@@ -232,7 +214,7 @@
                         <li>
                             <a href="html/view.html" class="img view-link">
                                 <div class="adult-box"></div>
-                                <img src="img/sample-img.png" alt="">
+                                <img src="../img/sample-img.png" alt="">
                             </a>
                             <div class="info">
                                 <a href="html/view.html" class="title view-link">
@@ -249,7 +231,7 @@
                         <li>
                             <a href="html/view.html" class="img view-link">
                                 <div class="adult-box"></div>
-                                <img src="img/sample-img.png" alt="">
+                                <img src="../img/sample-img.png" alt="">
                             </a>
                             <div class="info">
                                 <a href="html/view.html" class="title view-link">
@@ -266,7 +248,7 @@
                         <li class="adult">
                             <a href="html/view.html" class="img view-link">
                                 <div class="adult-box"></div>
-                                <img src="img/sample-img.png" alt="">
+                                <img src="../img/sample-img.png" alt="">
                             </a>
                             <div class="info">
                                 <a href="html/view.html" class="title view-link">
@@ -283,7 +265,7 @@
                         <li>
                             <a href="html/view.html" class="img view-link">
                                 <div class="adult-box"></div>
-                                <img src="img/sample-img.png" alt="">
+                                <img src="../img/sample-img.png" alt="">
                             </a>
                             <div class="info">
                                 <a href="html/view.html" class="title view-link">
@@ -300,7 +282,7 @@
                         <li>
                             <a href="html/view.html" class="img view-link">
                                 <div class="adult-box"></div>
-                                <img src="img/sample-img.png" alt="">
+                                <img src="../img/sample-img.png" alt="">
                             </a>
                             <div class="info">
                                 <a href="html/view.html" class="title view-link">
@@ -317,7 +299,7 @@
                         <li class="adult">
                             <a href="html/view.html" class="img view-link">
                                 <div class="adult-box"></div>
-                                <img src="img/sample-img.png" alt="">
+                                <img src="../img/sample-img.png" alt="">
                             </a>
                             <div class="info">
                                 <a href="html/view.html" class="title view-link">
@@ -334,7 +316,7 @@
                         <li>
                             <a href="html/view.html" class="img view-link">
                                 <div class="adult-box"></div>
-                                <img src="img/sample-img.png" alt="">
+                                <img src="../img/sample-img.png" alt="">
                             </a>
                             <div class="info">
                                 <a href="html/view.html" class="title view-link">
@@ -351,7 +333,7 @@
                         <li>
                             <a href="html/view.html" class="img view-link">
                                 <div class="adult-box"></div>
-                                <img src="img/sample-img.png" alt="">
+                                <img src="../img/sample-img.png" alt="">
                             </a>
                             <div class="info">
                                 <a href="html/view.html" class="title view-link">
@@ -368,7 +350,7 @@
                         <li>
                             <a href="html/view.html" class="img view-link">
                                 <div class="adult-box"></div>
-                                <img src="img/sample-img.png" alt="">
+                                <img src="../img/sample-img.png" alt="">
                             </a>
                             <div class="info">
                                 <a href="html/view.html" class="title view-link">
@@ -405,28 +387,28 @@
             <p class="info">파일달 사업자 정보<i></i></p>
             <p class="rule">아동·청소년이용음란물을 제작·배포·소지한 자는「아동ㆍ청소년의 성보호에 관한 법률」제11조에 따라 형사처벌을 받을 수 있습니다.</p>
             <div class="ft-logo">
-                <img src="img/ft-logo.png" alt="FILEDAL">
+                <img src="../img/ft-logo.png" alt="FILEDAL">
             </div>
         </div>
         <!-- // footer -->
         <!-- botMenu -->
         <div id="botMenu">
             <a href="#n">
-                <img src="img/home-4-line.png" alt="">홈
+                <img src="../img/home-4-line.png" alt="">홈
             </a>
             <a href="#n">
-                <img src="img/exchange-funds-fill.png" alt="">충전샵
+                <img src="../img/exchange-funds-fill.png" alt="">충전샵
             </a>
             <a href="#n">
-                <img src="img/gift-2-line.png" alt="">이벤트
+                <img src="../img/gift-2-line.png" alt="">이벤트
             </a>
             <a href="#n">
-                <img src="img/star-line.png" alt="">즐겨찾기
+                <img src="../img/star-line.png" alt="">즐겨찾기
             </a>
         </div>
         <!-- // botMenu -->
         <a href="#n" class="top-btn">
-            <img src="img/btn_top.png" alt="">
+            <img src="../img/btn_top.png" alt="">
         </a>
     </div>
 </body>

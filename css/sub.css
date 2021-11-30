@@ -25,6 +25,9 @@
 .login-box .join-link::after { content: ""; position: absolute; top: calc(100% + 0.3333rem); left: 0; display: block; width: 100%; height: 1px; background: #7348F0;}
 
 .join-box { display: flex; flex-direction: column; align-items: center; padding: 2.5rem 1.6667rem;}
+.join-box .input-box { position: relative; width: 100%; height: 4.167rem;}
+.join-box .input-box input { width: 100%; height: 100%; padding: 0 1.6667rem; border: 1px solid #D0D0D0; border-radius: 2.0833rem; outline: none;}
+.join-box .btn-primary { width: 100%; height: 4.167rem; font-size: 1.1667rem; font-weight: 400; line-height: 1.6667rem; border: none; border-radius: 2.0833rem; outline: none;}
 .join-box .sns-box { margin: 3.3333rem 0;}
 .join-box .sns-box p { font-size: 1.1667rem; line-height: 1.6667rem; color: #888888; text-align: center;}
 .join-box .sns-box p strong { display: block; font-size: 1.3333rem; line-height: 1.9167rem; color: #333333; margin-bottom: 0.6667rem;}
@@ -60,8 +63,15 @@
 .find-box .info-box p.info strong { font-weight: 400; color: #404040;}
 .find-box .info-box button[type="submit"] { display: block; width: 100%; height: 4.167rem; font-size: 1.3333rem; font-weight: 700; color: #FFFFFF; background: #202020; border: none; border-radius: 2.0833rem; margin: 2.5rem auto 0; outline: none;}
 .find-box #nameTab { display: none;}
-
-
+.find-box .find-complete { width: 100%; padding: 1.667rem;}
+.find-box .find-complete .comple-tit { font-size: 1.3333rem; font-weight: 500; line-height: 1.9167rem; color: #202020; text-align: center; margin-bottom: 2.5rem;}
+.find-box .find-complete .comple-box { padding: 2.0833rem; background: #F5F5F5; border-radius: 0.6667rem; text-align: center; margin-bottom: 1.25rem;}
+.find-box.find-id .find-complete .comple-box p { font-size: 1.3333rem; line-height: 1.9167rem; color: #333333;}
+.find-box.find-pw .find-complete .comple-box p { font-size: 1.1667rem; line-height: 1.6667rem; color: #333333;}
+.find-box .find-complete .comple-box p strong { font-weight: 600; color: #562BD1; text-decoration: underline;}
+.find-box .find-complete .comple-box p b { font-weight: 500; color: #202020;}
+.find-box .find-complete .comple-box p span { display: inline-block; font-weight: 600; margin-top: 1.25rem; color: #562BD1;}
+.find-box .find-complete a { display: flex; align-items: center; justify-content: center; width: 100%; height: 4.167rem; font-size: 1.3333rem; font-weight: 700; color: #FFFFFF; background: #202020; border: none; border-radius: 2.0833rem; margin: 2.5rem auto 0; outline: none;}
 
 
 
