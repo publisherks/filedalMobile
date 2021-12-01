@@ -81,8 +81,10 @@
 #viewHeader .subject h2 { font-size: 1.3333rem; font-weight: 500; line-height: 1.9167rem; color: #FFFFFF;}
 #viewHeader .view-btn { display: none; align-items: center; justify-content: center; width: 100%; padding: 0.9167rem 0; font-size: 1.3333rem; font-weight: 700; line-height: 1.9167rem; color: #FFFFFF; background: #00C2B6;}
 #viewHeader .view-btn i { width: 1rem; height: 1rem; margin-left: 0.4167rem; background: url(../img/ico-view-arrow.png) no-repeat center; background-size: 100%;}
+#viewHeader.show .view-btn { display: flex;}
+#wrap.scroll { padding-top: 9.167rem;}
 #wrap.scroll #subHeader { display: none;}
-#wrap.scroll #viewHeader { position: fixed; top: 0; width: 100%;}
+#wrap.scroll #viewHeader { position: fixed; top: 0; width: 100%; z-index: 10;}
 #wrap.scroll #viewHeader .subject h2 { white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 #container.view { padding-bottom: 4.167rem;}
 #container.view .view-table { margin-bottom: 1.6667rem; padding: 0.8333rem 1.6667rem; border-bottom: 1px solid #E3E3E3;}
@@ -104,6 +106,7 @@
 #container.view .file-box.open ul { height: auto;}
 #container.view .file-box ul li { font-size: 1.0833rem; line-height: 2.0833rem;}
 #container.view .file-box .arrow-btn { display: block; margin: 0 auto; width: 1.5rem; height: 0.75rem; background: url(../img/-bt_more.png) no-repeat center; background-size: 100%;}
+#container.view .file-box.open .arrow-btn { transform: rotate(180deg);}
 #container.view .contents-box { padding: 3.3333rem 1.6667rem; border-bottom: 0.8333rem solid #F5F5F5;}
 #container.view .contents-box h3.title { font-size: 1.5rem; font-weight: 700; line-height: 2.1667rem; color: #202020; margin-bottom: 2.0833rem;}
 #container.view .diff-box { padding: 2.5rem 0 3.3333rem; border-bottom: 0.8333rem solid #F5F5F5;}

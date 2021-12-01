@@ -59,7 +59,7 @@
     </div>
     <script>
         $(document).ready(function() {
-            var Offset = $("#subHeader").offset().top + $("#subHeader").outerHeight();
+            const Offset = $("#subHeader").offset().top + $("#subHeader").outerHeight();
             $(window).scroll(function() {
                 if($(document).scrollTop() > Offset) {
                     $("#subHeader").addClass("scroll");

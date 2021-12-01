@@ -435,14 +435,33 @@
     </div>
     <script>
         $(document).ready(function() {
-            // var Offset = $("#subHeader").offset().top + $("#subHeader").outerHeight();
-            // $(window).scroll(function() {
-            //     if($(document).scrollTop() > Offset) {
-            //         $("#subHeader").addClass("scroll");
-            //     }else {
-            //         $("#subHeader").removeClass("scroll");
-            //     }
-            // });
+            const hdOffset = $("#subHeader").outerHeight();
+            const btnOffset = $(".btn-wrap").offset().top;
+            $(window).scroll(function() {
+                if($(document).scrollTop() > hdOffset) {
+                    $("#wrap").addClass("scroll");
+                } else {
+                    $("#wrap").removeClass("scroll");
+                }
+
+                if($(document).scrollTop() > btnOffset - 40) {
+                    $("#viewHeader").addClass("show");
+                } else {
+                    $("#viewHeader").removeClass("show");
+                }
+            });
+
+            $(".file-box .arrow-btn").on("click", function() {
+                const box = $(this).closest(".file-box");
+
+                console.log(box.hasClass("open"));
+
+                if(box.hasClass("open")) {
+                    box.removeClass("open");
+                } else {
+                    box.addClass("open");
+                }
+            })
         });
     </script>
 </body>
