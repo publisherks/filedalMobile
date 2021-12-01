@@ -84,6 +84,7 @@
 #wrap.scroll #subHeader { display: none;}
 #wrap.scroll #viewHeader { position: fixed; top: 0; width: 100%;}
 #wrap.scroll #viewHeader .subject h2 { white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+#container.view { padding-bottom: 4.167rem;}
 #container.view .view-table { margin-bottom: 1.6667rem; padding: 0.8333rem 1.6667rem; border-bottom: 1px solid #E3E3E3;}
 #container.view .view-table table { width: 100%;}
 #container.view .view-table table th,
@@ -103,6 +104,36 @@
 #container.view .file-box.open ul { height: auto;}
 #container.view .file-box ul li { font-size: 1.0833rem; line-height: 2.0833rem;}
 #container.view .file-box .arrow-btn { display: block; margin: 0 auto; width: 1.5rem; height: 0.75rem; background: url(../img/-bt_more.png) no-repeat center; background-size: 100%;}
+#container.view .contents-box { padding: 3.3333rem 1.6667rem; border-bottom: 0.8333rem solid #F5F5F5;}
+#container.view .contents-box h3.title { font-size: 1.5rem; font-weight: 700; line-height: 2.1667rem; color: #202020; margin-bottom: 2.0833rem;}
+#container.view .diff-box { padding: 2.5rem 0 3.3333rem; border-bottom: 0.8333rem solid #F5F5F5;}
+#container.view .diff-box h3.title { font-size: 1.5rem; font-weight: 700; line-height: 2.1667rem; color: #202020; margin-bottom: 1.6667rem; padding-left: 1.6667rem;}
+#container.view .diff-box  .list-cate { display: flex; align-items: center; flex-wrap: wrap; margin-bottom: .8333rem; padding: 0 1.6667rem;}
+#container.view .diff-box  .list-cate a { display: block; padding: 0.6667rem 1rem; font-size: 1.0833rem; font-weight: 500; line-height: 1.5833rem; color: #888888; border: 1px solid #E3E3E3; border-radius: .3333rem;}
+#container.view .diff-box  .list-cate a.on { border-color: #562BD1; color: #562BD1;}
+#container.view .comment-box { padding: 2.5rem 1.6667rem 3.3333rem; border-bottom: 0.8333rem solid #F5F5F5;}
+#container.view .comment-box h3.title { display: flex; font-size: 1.5rem; font-weight: 700; line-height: 2.1667rem; color: #202020; margin-bottom: 0.4167rem; padding-left: 1.6667rem;}
+#container.view .comment-box .info { font-size: 1.1667rem; font-weight: 500; line-height: 1.6667rem; color: #562BD1; margin-left: 0.6667rem;}
+#container.view .comment-box .score-box { display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 1.6667rem;}
+#container.view .comment-box .score-box p { font-size: 1.3333rem; font-weight: 500; line-height: 1.9167rem; color: #404040; margin-bottom: 1rem;}
+#container.view .comment-box .score-box .blind { position: absolute; overflow: hidden; margin: -1px; padding: 0; width: 1px; height: 1px; border: none; clip: rect(0, 0, 0, 0);}
+#container.view .comment-box .score-box .score { display: flex; position: relative; width: 19rem; height: 3.833rem; overflow: hidden; background-color: #D0D0D0;}
+#container.view .comment-box .score-box .score:after { content: ""; display: block; position: absolute; left: 0; width: 100%; height: 3.833rem; background: url(../img/star_none.png) repeat-x left center; background-size: 20% 100%; z-index: 1; pointer-events: none;}
+#container.view .comment-box .score-box .score .score-label { position: relative; width: 1.9167rem; height: 3.833rem; z-index: 1; cursor: pointer;}
+#container.view .comment-box .score-box .score .score-label input { position: absolute; width: 0; height: 0; opacity: 0;}
+#container.view .comment-box .score-box .score .score-label .score-img { display: block; position: absolute; right: 0; width: 19rem; height: 3.833rem; pointer-events: none;}
+#container.view .comment-box .score-box .score .score-label input:checked + .score-img { background: #6435E9;}
+#container.view .comment-box .create-box { display: flex; width: 100%; height: 7.5rem; margin-bottom: 1.6667rem; border: 1px solid #E3E3E3; border-radius: 0.6667rem; overflow: hidden;}
+#container.view .comment-box .create-box textarea { width: 76%; height: 100%; font-size: 1.1667rem; font-weight: 400; color: #333333; line-height: 1.6667rem; padding: 1.25rem; border: none; outline: none; resize: none;}
+#container.view .comment-box .create-box textarea::placeholder { color: #A8A8A8;}
+#container.view .comment-box .create-box input { width: 24%; height: 100%; font-size: 1.3333rem; font-weight: 700; color: #FFFFFF; text-align: center; background: #00C2B6; border: none; outline: none; cursor: pointer;}
+#container.view .comment-box table { width: 100%; table-layout: fixed;}
+#container.view .comment-box table td { height: 6.25rem; font-size: 1.1667rem; line-height: 1.6667rem; color: #666666; text-align: left; padding: 1.25rem 0; border-bottom: 1px solid #E3E3E3; vertical-align: top;}
+#container.view .comment-box table td strong { font-weight: 700; color: #404040; margin-bottom: 0.4167rem;}
+#container.view .comment-box table td .down-score { position: relative; display: inline-block; width: 6rem; height: 1rem; background: url(../img/star-score.png) no-repeat left bottom; background-size: 6rem 2rem;}
+#container.view .comment-box table td .down-score div { position: absolute; top: 0; left: 0; height: 1rem; background: url(../img/star-score.png) no-repeat left top; background-size: 6rem 2rem;}
+#container.view .data-box { padding: 2.5rem 0 3.3333rem;}
+#container.view .data-box h3.title { display: flex; font-size: 1.5rem; font-weight: 700; line-height: 2.1667rem; color: #202020; margin-bottom: 0.4167rem; padding-left: 1.6667rem;}
 
 
 
