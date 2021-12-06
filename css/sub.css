@@ -138,6 +138,47 @@
 #container.view .data-box { padding: 2.5rem 0 3.3333rem;}
 #container.view .data-box h3.title { display: flex; font-size: 1.5rem; font-weight: 700; line-height: 2.1667rem; color: #202020; margin-bottom: 0.4167rem; padding-left: 1.6667rem;}
 
+/* 이벤트 */
+#container.event .tab-menu ul li { width: 50%;}
+#container.event .tab-menu ul li a { height: 3.917rem;}
+#container.event .event-list { display: flex; flex-direction: column; padding: 2.5rem 1.6667rem 5rem;}
+#container.event .event-list li { width: 100%; margin-bottom: 2.5rem;}
+#container.event .event-list li:last-child { margin-bottom: 0;}
+#container.event .event-list li .img { width: 100%; height: 12.5rem; margin-bottom: 1.25rem;}
+#container.event .event-list li .img img { width: 100%; height: 100%;}
+#container.event .event-list li .tit { font-size: 1.3333rem; font-weight: 700; line-height: 1.9167rem; color: #202020; margin-bottom: 0.75rem;}
+#container.event .event-list li .con,
+#container.event .event-list li .period { font-size: 1.1667rem; line-height: 1.6667rem;}
+#container.event .event-list li .con { color: #404040; margin-bottom: 0.3333rem;}
+#container.event .event-list li .period { color: #888888;}
+
+/* 출석체크 */
+#container.attendance .attendance-box .img-box { position: relative;}
+#container.attendance .attendance-box .img-box p.day { position: absolute; top: 34.17%; right: 30.93%; font-size: 4.8vw; font-weight: 700; line-height: 1.4; color: #6435E9;}
+#container.attendance .attendance-box .img-box .btn { position: absolute; top: 53.58%; left: 1.6667rem; display: flex; align-items: center; justify-content: center; width: calc(100% - 3.3333rem); height: 12.658%; font-size: 4.2194vw; font-weight: 700; color: #FFFFFF; background: #5E5BF9; border-radius: 10rem;}
+#container.attendance .attendance-box .calender-box { width: 100%; background: #FFFFFF; padding-top: 1.0833rem;}
+#container.attendance .attendance-box .calender-box .month-box { display: flex; align-items: center; justify-content: center; height: 3.833rem;}
+#container.attendance .attendance-box .calender-box .month-box p { font-size: 1.667rem; font-weight: 700; color: #5E5BF9; margin: 0 3.3333rem;}
+#container.attendance .attendance-box .calender-box .month-box a { width: 2.6667rem; height: 2.6667rem;}
+#container.attendance .attendance-box .calender-box .calender { width: 100%;}
+#container.attendance .attendance-box .calender-box .calender table { width: 100%;}
+#container.attendance .attendance-box .calender-box .calender table th { height: 3.75rem; font-size: 1.0833rem; font-weight: 500; line-height: 1.5833rem; color: #333333; vertical-align: middle;}
+#container.attendance .attendance-box .calender-box .calender table td { height: 4.167rem; font-size: 1.0833rem; line-height: 2.0833rem; color: #333333; text-align: center; vertical-align: middle; border: 1px solid #E3E3E3;}
+#container.attendance .attendance-box .calender-box .calender table td.check { background: url(../img/attendance-check.png) no-repeat center; background-size: cover; font-size: 0;}
+#container.attendance .notice { padding: 2.5rem 1.6667rem; background: #F5F5F5;}
+#container.attendance .notice p { font-size: 1.0833rem; line-height: 1.9167rem; color: #666666; word-break: keep-all;}
+#container.attendance .notice p strong { display: block; font-size: 1.1667rem; font-weight: 700; line-height: 1.6667rem; color: #333333; margin-bottom: 0.8333rem;}
+
+
+/* 쿠폰등록 */
+#container.coupon .coupon-box { position: relative;}
+#container.coupon .coupon-box .input-box { position: absolute; top: 89.147%; left: 5.33%; width: 89.33%; height: 6.387%; background: #FFFFFF; border: 0.25rem solid #4048D5; border-radius: 1rem;}
+#container.coupon .coupon-box .input-box input { width: 100%; height: 100%; padding: 0 23.88% 0 7.46%; font-size: 1.3333rem; font-weight: 700; color: #404040; line-height: 1.9167rem; border: none; border-radius: 1rem; outline: none;}
+#container.coupon .coupon-box .input-box button { position: absolute; top: -0.25rem; right: -0.25rem; width: 23.88%; height: calc(100% + 0.5rem); font-size: 1.3333rem; font-weight: 700; line-height: 1.9167rem; color: #FFFFFF; background: #4048D5; border: none; border-radius: 0 1rem 1rem 0; outline: none;}
+#container.coupon .notice { padding: 2.5rem 1.6667rem; background: #132F5D;}
+#container.coupon .notice p { font-size: 1.0833rem; line-height: 1.9167rem; color: #AAB4C5; word-break: keep-all;}
+#container.coupon .notice p strong { display: block; font-size: 1.1667rem; font-weight: 700; line-height: 1.6667rem; color: #FFFFFF; margin-bottom: 0.8333rem;}
+
 
 
 #container.agree { padding: 1.6667rem 1.6667rem 2.0833rem;}

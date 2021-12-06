@@ -220,3 +220,23 @@ input::placeholder { color: #A8A8A8;}
 .paging-container .paging-box a.prev,
 .paging-container .paging-box a.next {  background: url(../img/icon-paging-on.png) no-repeat center #F5F5F5;}
 .paging-container .paging-box a.prev { transform: rotate(180deg);}
+
+/* modal */
+.blocker { position: fixed; top: 0; right: 0; bottom: 0; left: 0; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; overflow: auto; z-index: 1000; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: rgba(0, 0, 0, 0.5); -webkit-transition: background-color .2s; transition: background-color .2s;}
+.blocker:before { content: ""; display: inline-block; height: 100%; vertical-align: middle; margin-right: -0.05em;}
+.blocker.behind { background-color: transparent;}
+.blocker.transparent { background-color: transparent;}
+.modal { display: none; vertical-align: middle; position: relative; background: #FFFFFF; border-radius: 1rem; z-index: 1000;}
+.modal .close-btn { position: absolute; top: 1.6667rem; right: 1.6667rem; width: 2rem; height: 2rem;}
+
+
+/* 본인인증 모달 */
+#authenticationModal { width: calc(100% - 3.3333rem);}
+#authenticationModal .modal-con { padding: 2.9167rem 2.5rem 3.3333rem;}
+#authenticationModal h3.title { font-size: 1.6667rem; font-weight: 700; line-height: 2.4167rem; color: #202020; text-align: center; margin-bottom: 1.25rem;}
+#authenticationModal p.info { font-size: 1.0833rem; line-height: 1.5833rem; color: #333333; text-align: center; margin-bottom: 2.0833rem;}
+#authenticationModal .box { display: flex; align-items: center; justify-content: center; width: 100%; height: 5rem; font-size: 1.3333rem; font-weight: 500; line-height: 1.9167rem; color: #FFFFFF; margin-bottom: 0.8333rem; padding-left: 2.25rem; background: #00C2B6; background-size: 19.63% 90%; background-repeat: no-repeat; background-position: 1.0833rem center; border-radius: 0.6667rem;}
+#authenticationModal .box:last-child { margin-bottom: 0;}
+#authenticationModal .box.auth1 { background-image: url(../img/ic_certi_1.png);}
+#authenticationModal .box.auth2 { background-image: url(../img/ic_certi_2.png);}
+#authenticationModal .box.auth3 { background-image: url(../img/ic_certi_3.png);}

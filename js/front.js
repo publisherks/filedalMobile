@@ -5,6 +5,7 @@ $(document).ready(function () {
     listTypeChange();
     pageBack();
     tab();
+    modal('a[data-modal]');
 });
 
 function sideMenu() {
@@ -89,4 +90,17 @@ function tab () {
             $(item).data("tabcon") === tabNum ? $(item).addClass("on") : $(item).removeClass("on");
         })
     })
+}
+
+function modal (target) {
+    $(target).on('click', function () {
+        let commonOption = {
+            fadeDuration: 200,
+            fadeDelay: .5,
+            closeText: '',
+        }
+
+        $($(this).data('modal')).modal(commonOption);
+        return false;
+    });
 }
