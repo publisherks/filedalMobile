@@ -166,8 +166,9 @@
 #container.attendance .attendance-box .calender-box .calender table td { height: 4.167rem; font-size: 1.0833rem; line-height: 2.0833rem; color: #333333; text-align: center; vertical-align: middle; border: 1px solid #E3E3E3;}
 #container.attendance .attendance-box .calender-box .calender table td.check { background: url(../img/attendance-check.png) no-repeat center; background-size: cover; font-size: 0;}
 #container.attendance .notice { padding: 2.5rem 1.6667rem; background: #F5F5F5;}
-#container.attendance .notice p { font-size: 1.0833rem; line-height: 1.9167rem; color: #666666; word-break: keep-all;}
-#container.attendance .notice p strong { display: block; font-size: 1.1667rem; font-weight: 700; line-height: 1.6667rem; color: #333333; margin-bottom: 0.8333rem;}
+#container.attendance .notice strong { display: block; font-size: 1.1667rem; font-weight: 700; line-height: 1.6667rem; color: #333333; margin-bottom: 0.8333rem;}
+#container.attendance .notice p { display: grid; grid-template-columns: 0 1fr; grid-gap: 1rem; align-items: start; font-size: 1.0833rem; line-height: 1.9167rem; color: #666666; word-break: keep-all;}
+#container.attendance .notice p::before { content: attr(data-icon);}
 
 
 /* 쿠폰등록 */
@@ -176,8 +177,61 @@
 #container.coupon .coupon-box .input-box input { width: 100%; height: 100%; padding: 0 23.88% 0 7.46%; font-size: 1.3333rem; font-weight: 700; color: #404040; line-height: 1.9167rem; border: none; border-radius: 1rem; outline: none;}
 #container.coupon .coupon-box .input-box button { position: absolute; top: -0.25rem; right: -0.25rem; width: 23.88%; height: calc(100% + 0.5rem); font-size: 1.3333rem; font-weight: 700; line-height: 1.9167rem; color: #FFFFFF; background: #4048D5; border: none; border-radius: 0 1rem 1rem 0; outline: none;}
 #container.coupon .notice { padding: 2.5rem 1.6667rem; background: #132F5D;}
-#container.coupon .notice p { font-size: 1.0833rem; line-height: 1.9167rem; color: #AAB4C5; word-break: keep-all;}
-#container.coupon .notice p strong { display: block; font-size: 1.1667rem; font-weight: 700; line-height: 1.6667rem; color: #FFFFFF; margin-bottom: 0.8333rem;}
+#container.coupon .notice strong { display: block; font-size: 1.1667rem; font-weight: 700; line-height: 1.6667rem; color: #FFFFFF; margin-bottom: 0.8333rem;}
+#container.coupon .notice p { display: grid; grid-template-columns: 0 1fr; grid-gap: 1rem; align-items: start; font-size: 1.0833rem; line-height: 1.9167rem; color: #AAB4C5; word-break: keep-all;}
+#container.coupon .notice p::before { content: attr(data-icon);}
+
+
+/* 고객센터 */
+#container.customer .tab-menu ul li { width: calc(100% / 3);}
+#container.customer .tab-menu ul li:nth-child(2) { border-left: 1px solid #562BD1; border-right: 1px solid #562BD1;}
+#container.customer { padding-bottom: 5rem;}
+#container.faq .faq-contents { padding: 2.5rem 1.6667rem 2.0833rem;}
+#container.faq .faq-contents h3.title { font-size: 1.3333rem; font-weight: 700; line-height: 2.0833rem; color: #202020; text-align: center; margin-bottom: 1.6667rem;}
+#container.faq .faq-contents .sch-box { position:relative; width: 100%; height: 4.167rem; border-radius: 2.0833rem; margin: 0 auto 2.5rem; background: #F5F5F5;}
+#container.faq .faq-contents .sch-box input { width: 100%; height: 100%; font-size: 1.1667rem; line-height: 1.6667rem; color: #333333; padding-left: 1.6667rem; background-color: transparent; border: none; outline: none;}
+#container.faq .faq-contents .sch-box input::placeholder { font-weight: 400; color: #A8A8A8;}
+#container.faq .faq-contents .sch-box .sch-btn { position: absolute; top: 50%; right: 1.6667rem; width: 2.5rem; height: 2.5rem; background: url(../img/search-bl.png) no-repeat center; background-size: cover; transform: translateY(-50%); border: none; outline: none;}
+#container.faq .faq-contents .list-cate { display: flex; flex-wrap: wrap; margin-bottom: 2.25rem; border: 1px solid #E3E3E3; border-radius: 0.3333rem; overflow: hidden;}
+#container.faq .faq-contents .list-cate li { width: calc(100% / 3); height: 4.167rem;}
+#container.faq .faq-contents .list-cate li:nth-child(2),
+#container.faq .faq-contents .list-cate li:nth-child(5) { border-left: 1px solid #E3E3E3; border-right: 1px solid #E3E3E3;}
+#container.faq .faq-contents .list-cate li:nth-child(-n+3) { border-bottom: 1px solid #E3E3E3;}
+#container.faq .faq-contents .list-cate li a { display: flex; align-items: center; justify-content: center; height: 100%; font-size: 1.1667rem; line-height: 1.6667rem; color: #666666;}
+#container.faq .faq-contents .list-cate li a.on { color: #FFFFFF; background: #333333;}
+#container.faq .faq-contents .cate-title { font-size: 1.3333rem; font-weight: 700; line-height: 1.9167rem; color: #202020; margin-bottom: 0.4167rem;}
+
+.accordion-list .accordion-item { border-bottom: 1px solid #E3E3E3;}
+.accordion-list .accordion-contents { display: flex; align-items: flex-start; background: #F5F5F5; border-top: 1px solid #E3E3E3;}
+.accordion-list .accordion-contents p { font-size: 1.1667rem; line-height: 2rem; color: #666666;}
+.accordion-list .accordion-btn { display: flex; align-items: center; cursor: pointer;}
+.accordion-list .accordion-btn .title { display: flex; align-items: center; font-size: 1.1667rem; color: #333333;}
+.accordion-list .accordion-btn .title p { white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.accordion-list .accordion-contents { display: none;}
+.accordion-list .accordion-item.no-data .accordion-btn { border-top: 1px solid #E3E3E3; border-bottom: 1px solid #E3E3E3;}
+.accordion-list .accordion-item.no-data .title { width: 100% !important; font-weight: 400 !important;}
+
+#container.faq .accordion-list .accordion-btn { height: 4.583rem;}
+#container.faq .accordion-list .accordion-btn .title { width: calc(100% - 5rem); font-weight: 500;}
+#container.faq .accordion-list .accordion-btn .title i { font-weight: 700; color: #00C2B6; margin-right: 0.5rem;}
+#container.faq .accordion-list .accordion-btn .accordion-icon { position: relative; flex: 0 0 1.5rem; height: 1.5rem; margin-left: auto; margin-right: 0.8333rem;}
+#container.faq .accordion-list .accordion-btn .accordion-icon .hotizontal,
+#container.faq .accordion-list .accordion-btn .accordion-icon .vertical { transition: all .25s ease-in-out; transform: rotate(-90deg);}
+#container.faq .accordion-list .accordion-btn .accordion-icon .hotizontal { position: absolute; top: 50%; left: 50%; margin-left: -0.75rem; margin-top: -0.0833rem; width: 1.5rem; height: 0.1667rem; background: #D0D0D0;}
+#container.faq .accordion-list .accordion-btn .accordion-icon .vertical { position: absolute; top: 50%; left: 50%; margin-left: -0.0833rem; margin-top: -0.75rem; width: 0.1667rem; height: 1.5rem; background: #D0D0D0;}
+#container.faq .accordion-list .accordion-contents { padding: 1.25rem 1.6667rem;}
+#container.faq .accordion-list .accordion-contents i { font-weight: 700; color: #FF3D6B; margin-right: 0.75rem;}
+#container.faq .accordion-list .accordion-item.active .accordion-btn .accordion-icon .hotizontal,
+#container.faq .accordion-list .accordion-item.active .accordion-btn .accordion-icon .vertical { background: #666666; transform: rotate(270deg);}
+#container.faq .accordion-list .accordion-item.active .accordion-btn .accordion-icon .hotizontal { opacity: 0;}
+
+#container.notice .notice-contents { padding: 1.25rem 1.6667rem;}
+#container.notice .accordion-list .accordion-btn { padding: 1.25rem 0;}
+#container.notice .accordion-list .accordion-btn p.ico { flex: 0 0 1.5833rem; text-align: center; font-size: 14px; line-height: 19px; color: #888888; margin-right: 5px;}
+#container.notice .accordion-list .accordion-btn p.title { width: calc(100% - 215px);}
+#container.notice .accordion-list .accordion-item.noti .title { font-weight: 500;}
+#container.notice .accordion-list .accordion-btn p.date { flex: 0 0 140px; font-size: 14px; line-height: 19px; color: #888888; text-align: center; margin-left: auto;}
+#container.notice .accordion-list .accordion-contents { padding: 30px 60px 45px 80px;}
 
 
 

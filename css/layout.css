@@ -45,6 +45,7 @@
 
 :root { font-size: 12px;}
 * { box-sizing: border-box;font-family: 'Noto Sans KR', sans-serif;letter-spacing: -0.025em;}
+.ft-os { font-family: 'Open Sans';}
 
 img { width: 100%;}
 
