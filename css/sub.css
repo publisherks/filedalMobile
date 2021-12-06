@@ -225,13 +225,13 @@
 #container.faq .accordion-list .accordion-item.active .accordion-btn .accordion-icon .vertical { background: #666666; transform: rotate(270deg);}
 #container.faq .accordion-list .accordion-item.active .accordion-btn .accordion-icon .hotizontal { opacity: 0;}
 
-#container.notice .notice-contents { padding: 1.25rem 1.6667rem;}
+#container.notice .notice-contents { padding: 1.25rem 1.6667rem 2.0833rem;}
 #container.notice .accordion-list .accordion-btn { padding: 1.25rem 0;}
-#container.notice .accordion-list .accordion-btn p.ico { flex: 0 0 1.5833rem; text-align: center; font-size: 14px; line-height: 19px; color: #888888; margin-right: 5px;}
-#container.notice .accordion-list .accordion-btn p.title { width: calc(100% - 215px);}
-#container.notice .accordion-list .accordion-item.noti .title { font-weight: 500;}
-#container.notice .accordion-list .accordion-btn p.date { flex: 0 0 140px; font-size: 14px; line-height: 19px; color: #888888; text-align: center; margin-left: auto;}
-#container.notice .accordion-list .accordion-contents { padding: 30px 60px 45px 80px;}
+#container.notice .accordion-list .accordion-btn p.ico { flex: 0 0 1.5833rem; text-align: center; margin-right: 0.6667rem;}
+#container.notice .accordion-list .accordion-btn p.ico img { vertical-align: baseline;}
+#container.notice .accordion-list .accordion-btn p.title { width: 100%;}
+#container.notice .accordion-list .accordion-item.noti .title { font-weight: 700; width: calc(100% - 1.5833rem);}
+#container.notice .accordion-list .accordion-contents { padding: 1.25rem 1.6667rem;}
 
 
 
