@@ -5,6 +5,8 @@ $(document).ready(function () {
     listTypeChange();
     pageBack();
     tab();
+    modal('a[data-modal]');
+    accordion();
 });
 
 function sideMenu() {
@@ -87,5 +89,40 @@ function tab () {
         $(this).closest("[data-tabMenu]").siblings("[data-tabCon]").each(function (index, item) {
             $(item).data("tabcon") === tabNum ? $(item).addClass("on") : $(item).removeClass("on");
         })
+    })
+}
+
+function modal (target) {
+    $(target).on('click', function () {
+        let commonOption = {
+            fadeDuration: 200,
+            fadeDelay: .5,
+            closeText: '',
+        }
+
+        $($(this).data('modal')).modal(commonOption);
+        return false;
+    });
+}
+
+function accordion () {
+    const ITME = $(".accordion-btn");
+
+    ITME.off("click.accordion").on("click.accordion", function(e) {
+        let target = $(e.currentTarget);
+        let parent = target.closest(".accordion-item");
+        let accCon = $(".accordion-contents");
+
+        if (target.siblings(accCon).length === 0) {
+            return false;
+        }
+
+        if (parent.hasClass("active")) {
+            parent.removeClass("active").find(accCon).slideUp("fast");
+        } else {
+            parent.addClass("active").siblings().removeClass("active");
+            accCon.slideUp("fast");
+            parent.find(accCon).slideDown("fast");
+        }
     })
 }
