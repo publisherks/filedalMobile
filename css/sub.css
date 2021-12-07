@@ -201,6 +201,9 @@
 #container.faq .faq-contents .list-cate li a.on { color: #FFFFFF; background: #333333;}
 #container.faq .faq-contents .cate-title { font-size: 1.3333rem; font-weight: 700; line-height: 1.9167rem; color: #202020; margin-bottom: 0.4167rem;}
 
+#container.inquiry .inquiry-contents { padding: 2.5rem 1.6667rem 2.0833rem;}
+#container.inquiry .inquiry-contents h3.title { font-size: 1.3333rem; font-weight: 700; line-height: 2.0833rem; color: #202020; text-align: center; margin-bottom: 2.5rem;}
+
 .accordion-list .accordion-item { border-bottom: 1px solid #E3E3E3;}
 .accordion-list .accordion-contents { display: flex; align-items: flex-start; background: #F5F5F5; border-top: 1px solid #E3E3E3;}
 .accordion-list .accordion-contents p { font-size: 1.1667rem; line-height: 2rem; color: #666666;}
@@ -208,10 +211,10 @@
 .accordion-list .accordion-btn .title { display: flex; align-items: center; font-size: 1.1667rem; color: #333333;}
 .accordion-list .accordion-btn .title p { white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .accordion-list .accordion-contents { display: none;}
-.accordion-list .accordion-item.no-data .accordion-btn { border-top: 1px solid #E3E3E3; border-bottom: 1px solid #E3E3E3;}
+.accordion-list .accordion-item.no-data .accordion-btn { height: 9.667rem; border-top: 1px solid #E3E3E3; border-bottom: 1px solid #E3E3E3;}
 .accordion-list .accordion-item.no-data .title { width: 100% !important; font-weight: 400 !important;}
 
-#container.faq .accordion-list .accordion-btn { height: 4.583rem;}
+#container.faq .accordion-list .accordion-btn { padding: 1.25rem 0;}
 #container.faq .accordion-list .accordion-btn .title { width: calc(100% - 5rem); font-weight: 500;}
 #container.faq .accordion-list .accordion-btn .title i { font-weight: 700; color: #00C2B6; margin-right: 0.5rem;}
 #container.faq .accordion-list .accordion-btn .accordion-icon { position: relative; flex: 0 0 1.5rem; height: 1.5rem; margin-left: auto; margin-right: 0.8333rem;}
@@ -225,7 +228,7 @@
 #container.faq .accordion-list .accordion-item.active .accordion-btn .accordion-icon .vertical { background: #666666; transform: rotate(270deg);}
 #container.faq .accordion-list .accordion-item.active .accordion-btn .accordion-icon .hotizontal { opacity: 0;}
 
-#container.notice .notice-contents { padding: 1.25rem 1.6667rem 2.0833rem;}
+#container.notice .notice-contents { padding: 2.0833rem 1.6667rem;}
 #container.notice .accordion-list .accordion-btn { padding: 1.25rem 0;}
 #container.notice .accordion-list .accordion-btn p.ico { flex: 0 0 1.5833rem; text-align: center; margin-right: 0.6667rem;}
 #container.notice .accordion-list .accordion-btn p.ico img { vertical-align: baseline;}
