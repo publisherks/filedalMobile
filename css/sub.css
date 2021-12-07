@@ -237,6 +237,21 @@
 #container.notice .accordion-list .accordion-contents { padding: 1.25rem 1.6667rem;}
 
 
+#container.inquiry .request-btn { display: flex; align-items: center; justify-content: center; width: 17.917rem; height: 4.167rem; margin: 0 auto 2.5rem; font-size: 1.3333rem; font-weight: 700; line-height: 2rem; color: #FFFFFF; background: #202020; border-radius: 2.0833rem;}
+#container.inquiry .inquiry-list { border-top: 2px solid #202020;}
+#container.inquiry .inquiry-list li.inquiry-item { border-bottom: 1px solid #E3E3E3;}
+#container.inquiry .inquiry-list li.inquiry-item.no-data { display: flex; align-items: center; justify-content: center; height: 9.667rem; font-size: 1.1667rem; font-weight: 500; line-height: 1.6667rem; color: #A8A8A8;}
+#container.inquiry .inquiry-list li.inquiry-item a { display: flex; align-items: center; padding: 1.0833rem 0;}
+#container.inquiry .inquiry-list li.inquiry-item a .inquiry-btn { width: calc(100% - 4.167rem);}
+#container.inquiry .inquiry-list li.inquiry-item a .inquiry-btn .subject { font-size: 1.3333rem; font-weight: 500; line-height: 1.9167rem; color: #333333;}
+#container.inquiry .inquiry-list li.inquiry-item a .inquiry-btn .subject p { white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+#container.inquiry .inquiry-list li.inquiry-item a .inquiry-btn .etc { display: flex; align-items: center; margin-top: 0.4167rem;}
+#container.inquiry .inquiry-list li.inquiry-item a .inquiry-btn .etc p.type { display: flex; align-items: center; font-size: 1rem; line-height: 1.4167rem; color: #666666;}
+#container.inquiry .inquiry-list li.inquiry-item a .inquiry-btn .etc p.type::after { content:""; width: 1px; height: 1.0833rem; margin: 0 0.5rem; background: #E3E3E3;}
+#container.inquiry .inquiry-list li.inquiry-item a .inquiry-btn .etc p.date { font-size: 1rem; line-height: 1.4167rem; color: #888888;}
+#container.inquiry .inquiry-list li.inquiry-item a .state { display: flex; align-items: center; justify-content: center; width: 4.167rem; height: 4.167rem; font-size: 1rem; line-height: 1.4167rem; color: #666666; background: #E3E3E3; border-radius: 2.0833rem;}
+#container.inquiry .inquiry-list li.inquiry-item a .state.cmp { color: #FFFFFF; background: #00C2B6;}
+
 
 #container.agree { padding: 1.6667rem 1.6667rem 2.0833rem;}
 #container.agree p { font-size: 1.1667rem; line-height: 1.8333rem; color: #404040;}
