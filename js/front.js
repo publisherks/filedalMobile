@@ -19,8 +19,7 @@ function sideMenu() {
 
 function onTop() {
     $(".top-btn").off("click").on("click", function () {
-        console.log(11)
-        $("body").stop().animate({scrollTop: 0}, 500)
+        $("body, html").stop().animate({scrollTop: 0}, 500)
     })
 }
 
