@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/front.js"></script>
+    <title>Filedal - 고객센터</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- subHeader -->
+        <header id="subHeader">
+            <a href="#" class="back-btn"></a>
+            <h2>고객센터</h2>
+        </header>
+        <!-- // subHeader -->
+        <!-- container -->
+        <div id="container" class="customer inquiry">
+            <article class="tab-menu">
+                <ul>
+                    <li><a href="./faq.html">자주하는 질문</a></li>
+                    <li><a href="./notice.html">공지사항</a></li>
+                    <li><a href="./inquiry.html" class="on">1:1문의</a></li>
+                </ul>
+            </article>
+            <article class="inquiry-contents">
+                <h3 class="title">이용하시면서 궁금하신 부분,<br />불편한 사항이 있다면 언제든지 알려주세요.</h3>
+                <form action="">
+                    <div class="inquiry-type">
+                        <button type="button">게시물 신고</button>
+                        <button type="button">결제/구매/판매</button>
+                        <button type="button" class="on">사이트/다운로드 오류</button>
+                        <button type="button">회원정보/이벤트</button>
+                    </div>
+                    <div class="radio-item">
+                        <p class="title">사이트 이용</p>
+                        <div class="radio">
+                            <input type="radio" name="siteuse" id="siteuse1" value="1">
+                            <label for="siteuse1">접속 오류</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="siteuse" id="siteuse2" value="2">
+                            <label for="siteuse2">검색 오류</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="siteuse" id="siteuse3" value="3">
+                            <label for="siteuse3">기타</label>
+                        </div>
+                    </div>
+                    <div class="radio-item">
+                        <p class="title">설치 및 다운로드</p>
+                        <div class="radio">
+                            <input type="radio" name="install" id="install1" value="1">
+                            <label for="install1">설치 오류</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="install" id="install2" value="2">
+                            <label for="install2">다운로드 오류</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="install" id="install3" value="3">
+                            <label for="install3">속도 문의</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="install" id="install4" value="4">
+                            <label for="install4">원격지원 요청</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="install" id="install5" value="5">
+                            <label for="install5">기타</label>
+                        </div>
+                    </div>
+                    <hr class="line" />
+                    <div class="check-item mb-25">
+                        <div class="title-box">
+                            <p>사용중인 운영체제 (OS)</p>
+                            <div class="checkbox">
+                                <input type="checkbox" name="os" id="os">
+                                <label for="os">선택안함</label>
+                            </div>
+                        </div>
+                        <div class="radio-item">
+                            <div class="radio">
+                                <input type="radio" name="os" id="os1" value="1">
+                                <label for="os1">윈도우10</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="os" id="os2" value="2">
+                                <label for="os2">윈도우8(8.1)</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="os" id="os3" value="3">
+                                <label for="os3">윈도우7</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="os" id="os4" value="4">
+                                <label for="os4">MAC</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="os" id="os5" value="5">
+                                <label for="os5">리눅스</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="os" id="os6" value="6">
+                                <label for="os6">기타</label>
+                                <input type="text" placeholder="입력">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-item">
+                        <div class="title-box">
+                            <p>사용중인 브라우저</p>
+                            <div class="checkbox">
+                                <input type="checkbox" name="browser" id="browser">
+                                <label for="browser">선택안함</label>
+                            </div>
+                        </div>
+                        <div class="radio-item">
+                            <div class="radio">
+                                <input type="radio" name="browser" id="browser1" value="1" disabled>
+                                <label for="browser1">크롬</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="browser" id="browser2" value="2" disabled>
+                                <label for="browser2">익스플로러</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="browser" id="browser3" value="3" disabled>
+                                <label for="browser3">엣지</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="browser" id="browser4" value="4" disabled>
+                                <label for="browser4">사파리</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="browser" id="browser5" value="5" disabled>
+                                <label for="browser5">파이어폭스</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="browser" id="browser6" value="6" disabled>
+                                <label for="browser6">기타</label>
+                                <input type="text" placeholder="브라우저를 입력해주세요." disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="division" />
+                    <div class="write-box">
+                        <p class="tit">제목</p>
+                        <input type="text" value="" placeholder="제목을 입력하세요." class="mb-20">
+                        <p class="tit">내용</p>
+                        <div class="write mb-15">
+                            <textarea name="" id=""></textarea>
+                        </div>
+                        <div class="upload">
+                            <div class="img-box">
+                                <div class="img">
+                                    <img src="../img/ex-img.png" alt="">
+                                    <a href="#n" class="del-btn">
+                                        <img src="../img/x-circle.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="img">
+                                    <img src="../img/ex-img.png" alt="">
+                                    <a href="#n" class="del-btn">
+                                        <img src="../img/x-circle.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="img">
+                                    <img src="../img/ex-img.png" alt="">
+                                    <a href="#n" class="del-btn">
+                                        <img src="../img/x-circle.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="img">
+                                    <img src="../img/ex-img.png" alt="">
+                                    <a href="#n" class="del-btn">
+                                        <img src="../img/x-circle.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="btn-box">
+                                <p>최대 <span>20</span>개 / 개당 <span>5MB</span> 이하</p>
+                                <div class="file-box">
+                                    <input type="file" id="imgUpload">
+                                    <label for="imgUpload">이미지 업로드</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="division" />
+                </form>
+            </article>
+        </div>
+        <!-- // container -->
+        <!-- footer -->
+        <div id="footer">
+            <div class="ft-menu">
+                <ul>
+                    <li><a href="#n">이용약관</a></li>
+                    <li><a href="#n">개인정보처리방침</a></li>
+                    <li><a href="#n">청소년보호정책</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#n">저작권보호센터</a></li>
+                    <li><a href="#n">개인정보침해신고센터</a></li>
+                    <li><a href="#n">고객센터</a></li>
+                </ul>
+            </div>
+            <p class="info">파일달 사업자 정보<i></i></p>
+            <p class="rule">아동·청소년이용음란물을 제작·배포·소지한 자는「아동ㆍ청소년의 성보호에 관한 법률」제11조에 따라 형사처벌을 받을 수 있습니다.</p>
+            <div class="ft-logo">
+                <img src="../img/ft-logo.png" alt="FILEDAL">
+            </div>
+        </div>
+        <!-- // footer -->
+        <!-- botMenu -->
+        <div id="botMenu">
+            <a href="#n">
+                <img src="../img/home-4-line.png" alt="">홈
+            </a>
+            <a href="#n">
+                <img src="../img/exchange-funds-fill.png" alt="">충전샵
+            </a>
+            <a href="../html/event.html">
+                <img src="../img/gift-2-line.png" alt="">이벤트
+            </a>
+            <a href="#n">
+                <img src="../img/star-line.png" alt="">즐겨찾기
+            </a>
+        </div>
+        <!-- // botMenu -->
+        <a href="#n" class="top-btn">
+            <img src="../img/btn_top.png" alt="">
+        </a>
+    </div>
+</body>
+</html>
