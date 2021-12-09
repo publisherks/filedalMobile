@@ -116,7 +116,7 @@
 #container.view .diff-box  .list-cate a.on { border-color: #562BD1; color: #562BD1;}
 #container.view .comment-box { padding: 2.5rem 1.6667rem 3.3333rem; border-bottom: 0.8333rem solid #F5F5F5;}
 #container.view .comment-box h3.title { display: flex; font-size: 1.5rem; font-weight: 700; line-height: 2.1667rem; color: #202020; margin-bottom: 0.4167rem; padding-left: 1.6667rem;}
-#container.view .comment-box .info { font-size: 1.1667rem; font-weight: 500; line-height: 1.6667rem; color: #562BD1; margin-left: 0.6667rem;}
+#container.view .comment-box .info { align-self: flex-end; font-size: 1.1667rem; font-weight: 500; line-height: 1.6667rem; color: #562BD1; margin-left: 0.6667rem;}
 #container.view .comment-box .score-box { display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 1.6667rem;}
 #container.view .comment-box .score-box p { font-size: 1.3333rem; font-weight: 500; line-height: 1.9167rem; color: #404040; margin-bottom: 1rem;}
 #container.view .comment-box .score-box .blind { position: absolute; overflow: hidden; margin: -1px; padding: 0; width: 1px; height: 1px; border: none; clip: rect(0, 0, 0, 0);}
@@ -277,7 +277,7 @@
 #container.inquiry .check-item input[type="text"] { width: calc(100% - 5.167rem); height: 3.3333rem; font-size: 1.1667rem; line-height: 1.6667rem; color: #333333; margin-left: 0.6667rem; padding: 0 0.8333rem; background: #FFFFFF; border: 1px solid #E3E3E3; border-radius: 0.3333rem; outline: none;}
 #container.inquiry .check-item input[type="text"]::placeholder { color: #A8A8A8;}
 #container.inquiry .check-item input[type="text"]:disabled { background: #F5F5F5;}
-#container.inquiry hr.division { width: calc(100% + 3.3333rem); margin: 2.5rem 0 2.5rem -1.6667rem; border-top: 0.8333rem solid #F5F5F5;}
+#container.inquiry hr.division { width: calc(100% + 3.3334rem); margin: 2.5rem 0 2.5rem -1.6667rem; border-top: 0.8333rem solid #F5F5F5;}
 #container.inquiry .write-box p.tit { font-size: 1.1667rem; font-weight: 500; line-height: 1.6667rem; color: #202020; margin-bottom: 0.6667rem;}
 #container.inquiry .write-box input { width: 100%; height: 3.75rem; font-size: 1.1667rem; line-height: 1.6667rem; color: #404040; padding: 0 1.25rem; border: 1px solid #E3E3E3; border-radius: 0.3333rem; outline: none;}
 #container.inquiry .write-box input::placeholder { color: #A8A8A8;}
@@ -293,8 +293,59 @@
 #container.inquiry .write-box .upload .btn-box .file-box { margin-left: auto;}
 #container.inquiry .write-box .upload .btn-box .file-box label { display: flex; align-items: center; justify-content: center; height: 3.3333rem; padding: 0 1.6667rem; font-size: 1.1667rem; font-weight: 700; line-height: 1.6667rem; color: #FFFFFF; background: #00C2B6; border-radius: 0.3333rem;}
 #container.inquiry .write-box .upload .btn-box .file-box input { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; border: none;}
+#container.inquiry .answer-box { display: flex; flex-direction: column;}
+#container.inquiry .answer-box .title-box { display: flex; align-items: center; margin-bottom: 16px;}
+#container.inquiry .answer-box .title-box p { font-size: 1.3333rem; font-weight: 700; line-height: 1.9167rem; color: #202020;}
+#container.inquiry .answer-box .checkbox { display: flex; align-items: center;}
+#container.inquiry .answer-box .checkbox label { font-size: 1.1667rem; font-weight: 500; line-height: 1.6667rem; color: #404040;}
+#container.inquiry .answer-box .checkbox.direct-chk label { color: #888888;}
+#container.inquiry .answer-box .checkbox a { font-size: 1.1667rem; font-weight: 500; line-height: 1.6667rem; color: #888888; text-decoration: underline; margin-left: 0.4167rem;}
+#container.inquiry .answer-box .guide-box li { display: grid; grid-template-columns: 0 1fr; grid-gap: 1rem; align-items: start; font-size: 1.0833rem; line-height: 1.9167rem; color: #666666; word-break: keep-all;}
+#container.inquiry .answer-box .guide-box li::before { content: attr(data-icon);}
+#container.inquiry .answer-box .input-box input { font-size: 1.3333rem; line-height: 1.8333rem; color: #666666; background: #FFFFFF; border: 1px solid #E3E3E3; border-radius: 0.3333rem; outline: none;}
+#container.inquiry .answer-box .input-box.phone { position: relative; width: 100%; height: 3.5rem;}
+#container.inquiry .answer-box .input-box.phone input { width: 100%; height: 100%; padding-left: 13rem;}
+#container.inquiry .answer-box .input-box.phone span { position: absolute; left: 6.667rem; top: 0.9167rem; font-size: 1.1667rem; line-height: 1.6667rem; color: #666666;}
+#container.inquiry .answer-box .input-box.email { display: flex; align-items: center;}
+#container.inquiry .answer-box .input-box.email input,
+#container.inquiry .answer-box .input-box.email select { width: 49.5%; height: 3.5rem;}
+#container.inquiry .answer-box .input-box.email select { font-size: 1.1667rem; line-height: 1.6667rem; color: #404040; padding: 0 1.25rem; border: 1px solid #E3E3E3; background: url(../img/arrow-down-bl-s.png) no-repeat calc(100% - 1.25rem) center #FFFFFF; background-size: 1.5rem; border-radius: 0.3333rem; outline: none; appearance:none; cursor: pointer;}
+#container.inquiry .answer-box .input-box.email span { font-size: 1.1667rem; color: #202020; margin: 0 0.4167rem;}
+#container.inquiry .regist-btn { display: block; width: 100%; height: 4.167rem; font-size: 1.3333rem; font-weight: 700; color: #FFFFFF; background: #202020; border: none; border-radius: 2.0833rem; margin: 3.3333rem auto 0; outline: none;}
+#container.inquiry .view-box .top-box { display: flex; align-items: center; padding: 1.0833rem 0; border-top: 2px solid #202020; border-bottom: 1px solid #E3E3E3;}
+#container.inquiry .view-box .top-box .subject-box { flex: 1 0 calc(100% - 4.167rem);}
+#container.inquiry .view-box .top-box .subject-box .subject { font-size: 1.3333rem; font-weight: 500; line-height: 1.9167rem; color: #333333; margin-bottom: 0.4167rem;}
+#container.inquiry .view-box .top-box .subject-box .etc { display: flex; align-items: center;}
+#container.inquiry .view-box .top-box .subject-box .etc .type { font-size: 1rem; line-height: 1.4167rem; color: #666666;}
+#container.inquiry .view-box .top-box .subject-box .etc .line { display: block; width: 1px; height: 1.0833rem; margin: 0 0.5rem; background: #E3E3E3;}
+#container.inquiry .view-box .top-box .subject-box .etc .date { font-size: 1rem; line-height: 1.4167rem; color: #888888;}
+#container.inquiry .view-box .top-box .state { flex: 0 0 4.167rem;}
+#container.inquiry .view-box .top-box .state span { display: flex; align-items: center; justify-content: center; width: 4.167rem; height: 4.167rem; font-size: 1rem; line-height: 1.4167rem; color: #666666; background: #E3E3E3; border-radius: 2.0833rem;}
+#container.inquiry .view-box .top-box .state.cmp span { color: #FFFFFF; background: #00C2B6;}
+#container.inquiry .view-box .con-box { margin-bottom: 2.5rem; padding: 1.6667rem 0; border-bottom: 1px solid #E3E3E3;}
+#container.inquiry .view-box .con-box .text-box { min-height: 23.333rem; font-size: 1.1667rem; line-height: 2rem; color: #404040; word-break: keep-all;}
+#container.inquiry .view-box .list-btn { display: flex; align-items: center; justify-content: center; margin: 0 auto 3.3333rem; width: 14.417rem; height: 4.167rem; font-size: 1.3333rem; font-weight: 700; line-height: 1.9167rem; color: #FFFFFF; background: #202020; border-radius: 2.0833rem;}
+#container.inquiry .comment h3.title { display: flex; font-size: 1.5rem; font-weight: 700; line-height: 2.1667rem; color: #202020; margin-bottom: 1.25rem;}
+#container.inquiry .comment .info { align-self: flex-end; font-size: 1.1667rem; font-weight: 500; line-height: 1.6667rem; color: #562BD1; margin-left: 0.6667rem;}
+#container.inquiry .comment .create-box { display: flex; width: 100%; height: 7.5rem; margin-bottom: 1.6667rem; border: 1px solid #E3E3E3; border-radius: 0.6667rem; overflow: hidden;}
+#container.inquiry .comment .create-box textarea { width: 76%; height: 100%; font-size: 1.1667rem; font-weight: 400; color: #333333; line-height: 1.6667rem; padding: 1.25rem; border: none; outline: none; resize: none;}
+#container.inquiry .comment .create-box textarea::placeholder { color: #A8A8A8;}
+#container.inquiry .comment .create-box input { width: 24%; height: 100%; font-size: 1.3333rem; font-weight: 700; color: #FFFFFF; text-align: center; background: #00C2B6; border: none; outline: none; cursor: pointer;}
+#container.inquiry .comment table { width: 100%; table-layout: fixed;}
+#container.inquiry .comment table td { height: 6.25rem; font-size: 1.1667rem; line-height: 1.6667rem; color: #666666; text-align: left; padding: 1.25rem 0; border-bottom: 1px solid #E3E3E3; vertical-align: top;}
+#container.inquiry .comment table td strong { font-weight: 700; color: #404040; margin-bottom: 0.4167rem;}
 
-
+#container.inquiry .score-box { display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 50px; padding: 30px 0; background: #F5F5F5; border: 1px solid #E3E3E3; border-radius: 12px;}
+#container.inquiry .score-box p { font-size: 16px; line-height: 26px; color: #666666;}
+#container.inquiry .score-box p strong { display: block; margin-bottom: 2px; font-size: 18px; font-weight: 500; color: #202020;}
+#container.inquiry .score-box p span { color: #562BD1;}
+#container.inquiry .score-box .blind { position: absolute; overflow: hidden; margin: -1px; padding: 0; width: 1px; height: 1px; border: none; clip: rect(0, 0, 0, 0);}
+#container.inquiry .score-box .score { display: flex; position: relative; margin-top: 18px; width: 170px; height: 34px; overflow: hidden; background-color: #D0D0D0;}
+#container.inquiry .score-box .score:after { content: ""; display: block; position: absolute; left: 0; width: 100%; height: 34px; background: url(../img/star_none2.png) repeat-x left center; z-index: 1; pointer-events: none;}
+#container.inquiry .score-box .score .score-label { position: relative; width: 17px; height: 34px; z-index: 1; cursor: pointer;}
+#container.inquiry .score-box .score .score-label input { position: absolute; width: 0; height: 0; opacity: 0;}
+#container.inquiry .score-box .score .score-label .score-img { display: block; position: absolute; right: 0; width: 170px; height: 34px; pointer-events: none;}
+#container.inquiry .score-box .score .score-label input:checked + .score-img { background: #6435E9;}
 
 
 #container.agree { padding: 1.6667rem 1.6667rem 2.0833rem;}

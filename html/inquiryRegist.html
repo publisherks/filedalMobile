@@ -13,6 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="../js/front.js"></script>
+    <script src="../js/modal.js"></script>
     <title>Filedal - 고객센터</title>
 </head>
 
@@ -198,6 +199,48 @@
                         </div>
                     </div>
                     <hr class="division" />
+                    <div class="answer-box">
+                        <div class="title-box">
+                            <p>답변이 등록되면 알려드립니다!</p>
+                        </div>
+                        <div class="checkbox mb-10">
+                            <input type="checkbox" name="phone" id="phone">
+                            <label for="phone">휴대폰으로 알림 받기</label>
+                        </div>
+                        <ul class="guide-box mb-15">
+                            <li data-icon="·">답변 등록 시 카톡 또는 문자로 발송해 드립니다.</li>
+                            <li data-icon="·">본인 인증된 번호가 있을 때만 발송 가능합니다.</li>
+                        </ul>
+                        <div class="input-box phone mb-30">
+                            <input type="text">
+                            <span>휴대폰 번호:</span>
+                        </div>
+                        <div class="checkbox mb-10">
+                            <input type="checkbox" name="email" id="email">
+                            <label for="email">이메일으로 알림 받기</label>
+                        </div>
+                        <ul class="guide-box mb-15">
+                            <li data-icon="·">답변 등록 시 이메일로 발송해 드립니다.</li>
+                        </ul>
+                        <div class="input-box email mb-13">
+                            <input type="text">
+                            <span>@</span>
+                            <select name="" id="">
+                                <option value="naver.com">naver.com</option>
+                            </select>
+                            <!-- <input type="text"> -->
+                        </div>
+                        <div class="checkbox direct-chk ml-auto mb-15">
+                            <input type="checkbox" name="direct" id="direct">
+                            <label for="direct">직접 입력</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="argee" id="argee">
+                            <label for="argee">개인정보 수집 및 이용 동의</label>
+                            <a href="#n" rel="modal:open" data-modal="#argeeModal">내용보기</a>
+                        </div>
+                    </div>
+                    <button type="submit" class="regist-btn">등록</button>
                 </form>
             </article>
         </div>
@@ -242,6 +285,24 @@
         <a href="#n" class="top-btn">
             <img src="../img/btn_top.png" alt="">
         </a>
+    </div>
+
+    <div id="argeeModal" class="modal">
+        <h3 class="modal-title">개인정보 수집 및 이용 동의 <span>[선택]</span></h3>
+        <p>
+            <strong>[개인정보 수집 및 이용 동의]</strong><br>
+            파일달은 다음과 같이 개인정보를 수집하고 있습니다.<br>
+            <br>
+            수집 및 이용 목적 : 답변 알림<br>
+            항목 : 휴대폰번호 & 이메일<br>
+            보유 및 이용기간 : <strong>수집일로부터 3년</strong><br>
+            <strong>(법령에 특별한 규정이 있을 경우 관련 법령에 따라 보관)</strong><br>
+            <br>
+            동의를 거부할 경우 답변을 받을 수 없습니다.<br>
+            <br>
+            <span>※ 그 외의 사항 및 자동 수집 정보와 관련된 사항은 개인정보처리방침을 따릅니다.</span>
+        </p>
+        <a href="#n" rel="modal:close" class="confirm-btn">확인</a>
     </div>
 </body>
 </html>

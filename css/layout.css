@@ -227,7 +227,7 @@ input::placeholder { color: #A8A8A8;}
 .blocker:before { content: ""; display: inline-block; height: 100%; vertical-align: middle; margin-right: -0.05em;}
 .blocker.behind { background-color: transparent;}
 .blocker.transparent { background-color: transparent;}
-.modal { display: none; vertical-align: middle; position: relative; background: #FFFFFF; border-radius: 1rem; z-index: 1000;}
+.modal { display: none; vertical-align: middle; position: relative; background: #FFFFFF; border-radius: 1rem; z-index: 1000; overflow: hidden;}
 .modal .close-btn { position: absolute; top: 1.6667rem; right: 1.6667rem; width: 2rem; height: 2rem;}
 
 
@@ -241,3 +241,13 @@ input::placeholder { color: #A8A8A8;}
 #authenticationModal .box.auth1 { background-image: url(../img/ic_certi_1.png);}
 #authenticationModal .box.auth2 { background-image: url(../img/ic_certi_2.png);}
 #authenticationModal .box.auth3 { background-image: url(../img/ic_certi_3.png);}
+
+
+/* 개인정보 수집 및 이용 동의 모달 */
+#argeeModal { width: calc(100% - 3.3333rem); padding: 2.5rem 1.6667rem 0;}
+#argeeModal .modal-title { font-size: 1.3333rem; font-weight: 700; line-height: 2.0833rem; color: #202020; text-align: center; margin-bottom: 1.25rem;}
+#argeeModal .modal-title span { color: #00C2B6;}
+#argeeModal p { font-size: 1.0833rem; font-weight: 500; line-height: 1.5833rem; color: #666666; word-break: keep-all;}
+#argeeModal p strong { color: #333333;}
+#argeeModal p span { font-weight: 400; color: #A8A8A8;}
+#argeeModal .confirm-btn { display: flex; align-items: center; justify-content: center; width: calc(100% + 3.3334rem); height: 4.167rem; margin-top: 2.0833rem; margin-left: -1.6667rem; font-size: 1.3333rem; font-weight: 700; line-height: 1.9167rem; color: #FFFFFF; background: #562BD1;}
