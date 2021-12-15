@@ -1,8 +1,10 @@
 @charset "utf-8";
 
 #subHeader { display: flex; align-items: center; justify-content: center; position: relative; padding: 1.25rem 1.9167rem; background-color: #562BD1;}
-#subHeader h2 { font-size: 1.3333rem; font-weight: 700; line-height: 1.9167rem; color: #FFFFFF;}
+#subHeader h2 { margin: 0 auto; font-size: 1.3333rem; font-weight: 700; line-height: 1.9167rem; color: #FFFFFF;}
 #subHeader .back-btn { position: absolute; top: auto; bottom: auto; left: 1.9167rem; display: block; width: 2rem; height: 2rem; background: url(../img/arrow-left-wh.png) no-repeat center; background-size: 100%;}
+#subHeader .menu-trigger,
+#subHeader .user-btn { width: 6.4%;}
 
 #subHeader.white { display: flex; align-items: center; justify-content: center; position: relative; padding: 1.25rem 1.9167rem; background-color: #FFFFFF;}
 #subHeader.white.scroll { position: fixed; top: 0; width: 100%; border-bottom: 1px solid #F5F5F5;}
@@ -345,6 +347,69 @@
 #container.inquiry .score-box .score .score-label input { position: absolute; width: 0; height: 0; opacity: 0;}
 #container.inquiry .score-box .score .score-label .score-img { display: block; position: absolute; right: 0; width: 19rem; height: 3.833rem; pointer-events: none;}
 #container.inquiry .score-box .score .score-label input:checked + .score-img { background: #6435E9;}
+
+
+/* 포인트 충전샵 */
+#container.shop .tab-menu ul li { width: 50%;}
+#container.shop .shop-contents { padding: 2.5rem 0 0;}
+#container.shop .banner { width: 100%; padding: 0 1.6667rem; border-radius: 12px; overflow: hidden;}
+#container.shop .shop-info { padding: 2.5rem 1.6667rem;}
+#container.shop .shop-info ul { display: flex; align-items: center; }
+#container.shop .shop-info ul li { display: flex; align-items: center; justify-content: center; font-size: 1.0833rem; font-weight: 500; line-height: 1.5833rem; color: #404040; margin-left: 0.8333rem;}
+#container.shop .shop-info ul li:first-child { margin-left: 0;}
+#container.shop .shop-info ul li img { margin-left: 0.25rem; width: 1.6667rem;}
+#container.shop .shop-info ul li:last-child img { width: 2.0833rem;}
+#container.shop .point-shop { padding: 2.0833rem 1.6667rem 3.3333rem; background: #F5F5F5;}
+#container.shop .point-shop .shop-box { display: flex; flex-wrap: wrap; margin-bottom: 1.25rem; padding: 1.6667rem; background: #FFFFFF; border-radius: 1rem;}
+#container.shop .point-shop .shop-box:last-child { margin-bottom: 0;}
+#container.shop .point-shop .shop-box .top { display: flex; align-items: center; width: 100%; margin-bottom: 1.25rem;}
+#container.shop .point-shop .shop-box .top p { font-size: 1.1667rem; font-weight: 600; line-height: 1.6667rem; color: #4422A5;}
+#container.shop .point-shop .shop-box .top p strong { display: block; font-size: 2rem; line-height: 1; margin-top: 0.1667rem;}
+#container.shop .point-shop .shop-box .top p strong span { font-size: 1.6667rem; font-weight: 400;}
+#container.shop .point-shop .shop-box .top .payment { display: flex; align-items: center; margin-left: auto; padding: 0.8333rem 1.6667rem; font-size: 1.5rem; font-weight: 700; line-height: 2.0833rem; color: #FFFFFF; background: #562BD1; border-radius: 4.167rem;}
+#container.shop .point-shop .shop-box .top .payment span { font-size: 1.1667rem; font-weight: 400;}
+#container.shop .point-shop .shop-box .top .payment img { width: 1.1667rem; margin-left: 0.4167rem;}
+#container.shop .point-shop .shop-box .point { display: flex; align-items: center; justify-content: center; flex-direction: column; width: 28.88%; height: 6.25rem; border: 2px solid #562BD1; border-radius: 0.6667rem;}
+#container.shop .point-shop .shop-box .point img { width: 1.1667rem; margin-bottom: 0.5rem;}
+#container.shop .point-shop .shop-box .point p { font-size: 1.1667rem; font-weight: 700; line-height: 1; color: #FF3D6B;}
+#container.shop .point-shop .shop-box .point p span { font-weight: 600;}
+#container.shop .point-shop .shop-box .benefits { display: flex; align-items: center; justify-content: center; width: calc(71.12% - 1.5rem); height: 6.25rem; margin-left: auto;}
+#container.shop .point-shop .shop-box .benefits:not(.none) { position: relative; border: 2px solid #562BD1; border-radius: 0.6667rem;}
+#container.shop .point-shop .shop-box .benefits.none { background: #F5F5F5;}
+#container.shop .point-shop .shop-box .benefits.none p { font-size: 1.1667rem; line-height: 1.6667rem; color: #888888; text-align: center;}
+#container.shop .point-shop .shop-box .benefits .plus-icon { position: absolute; top: 50%; left: 0; width: 1.8333rem; transform: translate(-50%, -0.9167rem);}
+#container.shop .point-shop .shop-box .benefits ul { display: flex; align-items: center;}
+#container.shop .point-shop .shop-box .benefits ul li { font-size: 1.1667rem; font-weight: 700; line-height: 1; margin-left: 0.8333rem; text-align: center;}
+#container.shop .point-shop .shop-box .benefits ul li img { display: block; width: 1.6667rem; margin: 0 auto 0.5rem;}
+#container.shop .point-shop .shop-box .benefits ul li span { font-weight: 600;}
+#container.shop .point-shop .shop-box .benefits ul li:first-child { color: #FAA500; margin-left: 0;}
+#container.shop .point-shop .shop-box .benefits ul li:nth-child(2) { color: #6335E8;}
+#container.shop .point-shop .shop-box .benefits ul li:last-child { color: #0788FF;}
+#container.shop .point-shop .shop-box .benefits ul li:last-child img { width: 2.0833rem;}
+
+/* 결제정보 */
+#container.payment .payment-contents { padding: 2.5rem 1.6667rem;}
+#container.payment .info-box { width: 100%; padding: 1.25rem 1.6667rem 1.6667rem; border: 1px solid #4422A5; border-radius: 0.6667rem;}
+#container.payment .info-box .point { display: flex; align-items: center; margin-bottom: 0.8333rem;}
+#container.payment .info-box .point p { font-size: 1.3333rem; font-weight: 700; line-height: 1.9167rem; color: #4422A5;}
+#container.payment .info-box .point strong { margin-left: auto; font-size: 2rem; font-weight: 700; line-height: 2.75rem; color: #4422A5;}
+#container.payment .info-box .point strong span { font-size: 1.6667rem; font-weight: 600;}
+#container.payment .info-box .detail { padding: 1.0833rem 1.5rem; background: #F5F5F5; border-radius: 0.6667rem;}
+#container.payment .info-box .detail p { font-size: 1.1667rem; font-weight: 400; line-height: 1.5833rem; color: #666666; word-break: keep-all;}
+#container.payment .info-box .detail p:not(:last-child) { margin-bottom: 0.3333rem;}
+#container.payment .payment-price { display: flex; align-items: center; margin-top: 0.8333rem; padding: 1.0833rem 1.6667rem; background: #4422A5; border-radius: 0.6667rem;}
+#container.payment .payment-price p { font-size: 1.3333rem; font-weight: 700; line-height: 1.9167rem; color: #FFFFFF;}
+#container.payment .payment-price strong { margin-left: auto; font-size: 2rem; font-weight: 700; line-height: 2.75rem; color: #FFFFFF;}
+#container.payment .payment-price strong span { font-size: 1.5rem; font-weight: 400;}
+#container.payment .required-text { margin-top: 0.8333rem; font-size: 1.0833rem; line-height: 1.5833rem; color: #E02E2E;}
+#container.payment .pay-method { margin-top: 2.0833rem;}
+#container.payment .pay-method p { font-size: 1.3333rem; font-weight: 700; line-height: 1.9167rem; color: #4422A5; margin-bottom: 0.5833rem;}
+#container.payment .pay-method ul { display: flex; flex-wrap: wrap;}
+#container.payment .pay-method ul li { display: flex; align-items: center; justify-content: center; width: calc((100% - 0.5833rem) / 2); height: 3.75rem; margin-top: 0.5833rem; font-size: 1.1667rem; font-weight: 500; line-height: 1.6667rem; color: #666666; background: #F5F5F5; border: 1px solid #D0D0D0; border-radius: 0.3333rem; cursor: pointer;}
+#container.payment .pay-method ul li:nth-child(even) { margin-left: 0.5833rem;}
+#container.payment .pay-method ul li.on { color: #562BD1; border-color: #562BD1;}
+
+
 
 
 #container.agree { padding: 1.6667rem 1.6667rem 2.0833rem;}
