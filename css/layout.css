@@ -92,6 +92,15 @@ body.open .side-cover { background-color: rgba(0, 0, 0, 0.4); pointer-events: au
 #sideMenu .btn-wrap a { display: flex; align-items: center; justify-content: center; width: 42.5%; height: 3.75rem; font-size: 1.3333rem; font-weight: 500; color: #FFFFFF; border-radius: 1.917rem;}
 #sideMenu .btn-wrap a.login-btn { background: #562BD1; margin-right: .6667rem;}
 #sideMenu .btn-wrap a.join-btn { background: #32197B;}
+#sideMenu p.user { font-size: 1.3333rem; font-weight: 500; line-height: 1.9167rem; color: #404040; margin-bottom: 1.6667rem; padding: 0.8333rem 1.6667rem 0;}
+#sideMenu .user-menu { display: flex; flex-wrap: wrap;}
+#sideMenu .user-menu li { display: flex; flex-direction: column; align-items: center; justify-content: center; width: calc(100% / 3); padding: 1.0833rem 0; background: #F5F5F5;}
+#sideMenu .user-menu li:nth-child(n+4) { border-top: 1px solid #E3E3E3;}
+#sideMenu .user-menu li:nth-child(2),
+#sideMenu .user-menu li:nth-child(5) { border-left: 1px solid #E3E3E3; border-right: 1px solid #E3E3E3;}
+#sideMenu .user-menu li p { font-size: 1.1667rem; font-weight: 400; line-height: 1.6667rem;}
+#sideMenu .user-menu li p.info { color: #7348F0; margin-bottom: 0.1667rem;}
+#sideMenu .user-menu li p.data { color: #666666;}
 #sideMenu .side-menu { padding: 0 1.6667rem;}
 #sideMenu .side-menu li { width: 100%;}
 #sideMenu .side-menu li a { display: flex; align-items: center; height: 4.167rem; font-size: 1.3333rem; color: #333333; border-bottom: 1px solid #E3E3E3;}

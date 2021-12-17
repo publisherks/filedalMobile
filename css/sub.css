@@ -387,6 +387,27 @@
 #container.shop .point-shop .shop-box .benefits ul li:last-child { color: #0788FF;}
 #container.shop .point-shop .shop-box .benefits ul li:last-child img { width: 2.0833rem;}
 
+/* 정액권 충전 */
+#container.shop .pass-shop { padding: 2.5rem 1.6667rem;}
+#container.shop .pass-shop .shop-box { display: flex; flex-direction: column; align-items: center; width: 100%; margin-top: 1.25rem; padding-top: 2.5rem; background: #333333; border-radius: 1rem;}
+#container.shop .pass-shop .shop-box:first-child { margin-top: 0;}
+#container.shop .pass-shop .shop-box .title-box { display: flex; align-items: center; justify-content: center; margin-bottom: 1.6667rem;}
+#container.shop .pass-shop .shop-box .title-box img.moon { width: 3.8rem; height: 3.8rem; margin-right: 1.25rem;}
+#container.shop .pass-shop .shop-box .title-box p { font-size: 1.6667rem; font-weight: 700; line-height: 2.4167rem; color: #FFFFFF;}
+#container.shop .pass-shop .shop-box .benefits { width: 100%; padding: 0 1.6667rem;}
+#container.shop .pass-shop .shop-box .benefits ul { width: 100%; padding: 1.25rem 0; background: #404040; border-radius: 0.6667rem;}
+#container.shop .pass-shop .shop-box .benefits ul li { display: flex; align-items: center; font-size: 1.1667rem; font-weight: 500; line-height: 1.6667rem; color: #D0D0D0; padding-left: 23%;}
+#container.shop .pass-shop .shop-box .benefits ul li span { color: #6BFFF5;}
+#container.shop .pass-shop .shop-box .benefits ul li img { width: 1.0833rem; margin-right: 0.75rem;}
+#container.shop .pass-shop .shop-box .price { display: flex; align-items: baseline; text-align: center; font-size: 1.5rem; font-weight: 500; line-height: 2.1667rem; color: #A8A8A8; margin-top: 1.25rem;}
+#container.shop .pass-shop .shop-box .price strong { font-size: 2.5rem; font-weight: bold; line-height: 3.417rem; color: #FFFFFF; margin-left: 0.6667rem;}
+#container.shop .pass-shop .shop-box .price strong span { font-size: 1.6667rem; font-weight: 400;}
+#container.shop .pass-shop .shop-box .btn { display: flex; align-items: center; justify-content: center; width: 100%; height: 5rem; margin-top: 1.25rem; font-size: 1.3333rem; font-weight: 700; line-height: 1.9167rem; color: #FFFFFF; background: #562BD1; border-radius: 0 0 1rem 1rem;}
+#container.shop .shop-notice { padding: 2.5rem 1.6667rem; background: #F5F5F5;}
+#container.shop .shop-notice p { font-size: 1.1667rem; font-weight: 500; line-height: 1.6667rem; color: #333333; margin-bottom: 0.8333rem;}
+#container.shop .shop-notice ul li { display: grid; grid-template-columns: 0 1fr; grid-gap: 0.6667rem; align-items: start; font-size: 1.0833rem; font-weight: 400; line-height: 1.9167rem; color: #666666; word-break: keep-all;}
+#container.shop .shop-notice ul li::before { content: attr(data-icon);}
+
 /* 결제정보 */
 #container.payment .payment-contents { padding: 2.5rem 1.6667rem;}
 #container.payment .info-box { width: 100%; padding: 1.25rem 1.6667rem 1.6667rem; border: 1px solid #4422A5; border-radius: 0.6667rem;}
