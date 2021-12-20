@@ -117,7 +117,7 @@
 #container.view .diff-box  .list-cate a { display: block; padding: 0.6667rem 1rem; font-size: 1.0833rem; font-weight: 500; line-height: 1.5833rem; color: #888888; border: 1px solid #E3E3E3; border-radius: .3333rem;}
 #container.view .diff-box  .list-cate a.on { border-color: #562BD1; color: #562BD1;}
 #container.view .comment-box { padding: 2.5rem 1.6667rem 3.3333rem; border-bottom: 0.8333rem solid #F5F5F5;}
-#container.view .comment-box h3.title { display: flex; font-size: 1.5rem; font-weight: 700; line-height: 2.1667rem; color: #202020; margin-bottom: 0.4167rem; padding-left: 1.6667rem;}
+#container.view .comment-box h3.title { display: flex; font-size: 1.5rem; font-weight: 700; line-height: 2.1667rem; color: #202020; margin-bottom: 1.6667rem; padding-left: 1.6667rem;}
 #container.view .comment-box .info { align-self: flex-end; font-size: 1.1667rem; font-weight: 500; line-height: 1.6667rem; color: #562BD1; margin-left: 0.6667rem;}
 #container.view .comment-box .score-box { display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 1.6667rem;}
 #container.view .comment-box .score-box p { font-size: 1.3333rem; font-weight: 500; line-height: 1.9167rem; color: #404040; margin-bottom: 1rem;}
@@ -143,6 +143,8 @@
 /* 이벤트 */
 #container.event .tab-menu ul li { width: 50%;}
 #container.event .tab-menu ul li a { height: 3.917rem;}
+#container.event [data-tabCon] { display: none;}
+#container.event [data-tabCon].on { display: block;}
 #container.event .event-list { display: flex; flex-direction: column; padding: 2.5rem 1.6667rem 5rem;}
 #container.event .event-list li { width: 100%; margin-bottom: 2.5rem;}
 #container.event .event-list li:last-child { margin-bottom: 0;}

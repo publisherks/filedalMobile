@@ -66,9 +66,11 @@ function pageBack () {
 
 
 function tab () {
-    const TABMENU = $("[data-tabMenu]").find(">li");
+    const TABMENU = $("[data-tabMenu]").find("li");
     const TABBTN  = TABMENU.find("a");
     const TABCON  = $("[data-tabMenu]").siblings("[data-tabCon]");
+
+    console.log(TABCON);
 
     TABMENU.each(function (index, tabmenus) {
         if ($(tabmenus).find("a").hasClass("on")) {

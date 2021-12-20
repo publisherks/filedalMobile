@@ -143,7 +143,7 @@ body.open .side-cover { background-color: rgba(0, 0, 0, 0.4); pointer-events: au
 .topsch-box span.up { font-size: 1.1667rem; font-weight: 600; line-height: 1; padding-left: 1.3333rem;}
 .topsch-box span.down { background: url(../img/ic_pop_down.png) no-repeat left center; background-size: 1rem; color: #9C79FF;}
 .topsch-box span.up { background: url(../img/ic_pop_up.png) no-repeat left center; background-size: 1rem;}
-.topsch-box .ranking-box { display: none; flex-wrap: wrap; position: absolute; top: 0; left: 0; width: 100%; padding-top: 1.0833rem; background: #F5F5F5;}
+.topsch-box .ranking-box { display: none; flex-wrap: wrap; position: absolute; top: 0; left: 0; width: 100%; padding-top: 1.0833rem; background: #F5F5F5; z-index: 1;}
 .topsch-box.open .ranking-box { display: flex; }
 .topsch-box .ranking-box ul { width: 50%;}
 .topsch-box .ranking-box ul:first-child { padding: 0 0.9167rem 2.0833rem 1.6667rem;}
